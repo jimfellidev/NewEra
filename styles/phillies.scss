@@ -1,0 +1,364 @@
+$breakpoint-tablet: 768px;
+
+
+header {
+    margin-bottom: 43px;
+}
+
+.test {
+
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #EEEEEE;
+    font-family: Arial;
+  }
+  
+  /* Center website */
+  .phillies-filter {
+      width: 100%;
+      margin-top: 110px;
+      &__title {
+        font-family: 'open sans';
+        text-align: center;
+        font-size: 28px;
+        color: #000000;
+        letter-spacing: 0.5px;
+        line-height: 63px;
+        @media (min-width: $breakpoint-tablet) {
+            font-size: 54px;
+            color: #000000;
+            letter-spacing: 0.5px;
+            line-height: 63px;
+        } 
+      }
+
+  }
+
+
+  .filter-hat-wrap {
+    @media (min-width: $breakpoint-tablet) {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        width: 93%;
+        margin: 0 auto;
+    } 
+  }
+
+  .filter {
+      display: none;
+      background-color: white;
+      width: 180px;
+      padding-left: 16px;
+      padding-top: 5px;
+      @media (min-width: $breakpoint-tablet) {
+        display: flex;
+        flex-direction: column;
+    } 
+    &__title {
+        font-family: 'open sans';
+        font-size: 28px;
+        color: #000000;
+        letter-spacing: 0.2px;
+        line-height: 20px;
+        @media (min-width: $breakpoint-tablet) {
+            margin-top: 40px;
+        } 
+    }
+    &__type-title {
+        font-family: 'open sans';
+        font-size: 18px;
+        color: #000000;
+        letter-spacing: 0.2px;
+        line-height: 18px;
+        margin-top: 11px;
+        margin-bottom: 11px;
+        @media (min-width: $breakpoint-tablet) {
+            margin-bottom: 36px;
+        } 
+    }
+    &__close {
+        position: absolute;
+        right: 6px;
+        top: -4px;
+        width: 16px;
+        height: 16px;
+        color: #979797;
+        &:hover {
+            cursor: pointer;
+            color: black;
+
+        }
+    }
+    &__label {
+        font-family: 'open sans';
+        font-size: 14px;
+        color: #000000;
+        letter-spacing: 0.5px;
+        line-height: 36px;
+    }
+    &__checkbox-wrap {
+        margin-top: -22px;
+        padding-top: 30px;
+        padding-left: 16px;
+        box-shadow: 0px 0px 5px -2px;
+        @media (min-width: $breakpoint-tablet) {
+            box-shadow: none;
+            padding-left: 0;
+            padding-top: 0px;
+        } 
+    }
+    
+  }
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .hats {
+    margin: 8px auto;
+    background-color: white;
+    width: 93%;
+    &__content {
+        background-color: white;
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+        @media (min-width: $breakpoint-tablet) {
+            padding: 15px;
+        }         
+    }
+    &__button {
+        background-color: #FFFFFF;
+        border: 1px solid #000000 !important;
+        outline: none;
+        padding: 12px 16px;
+        background-color: white;
+        cursor: pointer;
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 0.89px;
+        text-align: center;
+        margin-right: 12px;
+        &:active {
+            background-color: #666;
+            color: white;
+        }
+        @media (min-width: $breakpoint-tablet) {
+            display: none;
+        } 
+  }
+  &__menu-wrap {
+      position: absolute;
+      width: 93%;
+      background-color: white;
+      @media (min-width: $breakpoint-tablet) {
+        display: none;
+    } 
+  }
+    &__button-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 24px;
+        padding-bottom: 20px;
+        @media (min-width: $breakpoint-tablet) {
+            display: none;
+        } 
+    }
+    
+    &__image {
+        margin: 0 auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 110px;
+        width: 120px;
+        @media (min-width: $breakpoint-tablet) {
+            height: 115px;
+            width: 160px;
+            padding-left: 15px;
+            padding-right: 15px;
+            
+        } 
+        @media (min-width: 900px) {
+            height: 135px;
+            width: 180px;
+            
+        } 
+        &--1 {
+            background-image: url(../images/phillies/phillies1.png);
+        }
+        &--2 {
+            background-image: url(../images/phillies/phillies2.png);
+        }
+        &--3 {
+            background-image: url(../images/phillies/phillies3.png);
+        }
+        &--4 {
+            background-image: url(../images/phillies/phillies4.png);
+        }
+        &--5 {
+            background-image: url(../images/phillies/phillies5.png);
+        }
+        &--6 {
+            background-image: url(../images/phillies/phillies6.png);
+        }
+        &--7 {
+            background-image: url(../images/phillies/phillies7.png);
+        }
+        &--8 {
+            background-image: url(../images/phillies/phillies8.png);
+        }
+        &--9 {
+            background-image: url(../images/phillies/phillies9.png);
+        }
+        &--10 {
+            background-image: url(../images/phillies/phillies10.png);
+        }
+        &--11 {
+            background-image: url(../images/phillies/phillies11.png);
+        }
+        &--12 {
+            background-image: url(../images/phillies/phillies12.png);
+        }
+        &--13 {
+            background-image: url(../images/phillies/phillies13.png);
+        }
+        &--14 {
+            background-image: url(../images/phillies/phillies14.png);
+        }
+        &--15 {
+            background-image: url(../images/phillies/phillies15.png);
+        }
+        &--16 {
+            background-image: url(../images/phillies/phillies16.png);
+        }
+        &--17 {
+            background-image: url(../images/phillies/phillies17.png);
+        }
+        &--18 {
+            background-image: url(../images/phillies/phillies18.png);
+        }
+        &--19 {
+            background-image: url(../images/phillies/phillies19.png);
+        }
+        &--20{
+            background-image: url(../images/phillies/phillies20.png);
+        }
+        &--1 {
+            background-image: url(../images/phillies/phillies1.png);
+        }
+        &--1 {
+            background-image: url(../images/phillies/phillies1.png);
+        }
+    }
+    &__title {
+        font-family: 'open sans';
+        font-size: 13px;
+        color: #000000;
+        letter-spacing: 0.34px;
+        text-align: center;
+        line-height: 19px;
+        margin-bottom: 2px;
+        margin-top: -12px;
+
+        @media (min-width: $breakpoint-tablet) {
+            font-family: 'open sans';
+            font-size: 16px;
+            letter-spacing: 0.2px;
+            line-height: 26px;
+            margin-top: 0;
+        } 
+    }
+    &__description {
+        font-family: 'open sans';
+        font-size: 11px;
+        color: #666666;
+        letter-spacing: 0.38px;
+        text-align: center;
+        line-height: 13px;
+        margin-top: 0px;
+        @media (min-width: $breakpoint-tablet) {
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            line-height: 16px;
+    }
+  }
+}
+  
+.show-all-btn {
+    background-color: white;
+    text-decoration: underline;
+    font-family: 'open sans';
+    font-size: 14px;
+    color: #666666;
+    letter-spacing: 0;
+    // text-align: right;
+    outline: none;
+    border: none;
+    &:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+}
+  /* Add padding BETWEEN each column (if you want) */
+//   .hats,
+//   .hats > .column {
+//     padding: 8px;
+//   }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    display: none; /* Hide columns by default */
+    @media (min-width: 768px) {
+        width: 33.3%;
+    } 
+  }
+  
+  /* Clear floats after hatss */
+  .hats:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background color to the active button */
+  .btn.active {
+    background-color: #666;
+     color: white;
+  }

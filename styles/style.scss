@@ -1,0 +1,1332 @@
+$breakpoint-tablet: 768px;
+
+
+
+
+html {
+    min-width: 320px;
+}
+
+// font-family: 'Open Sans', ;
+// font-family: 'Raleway', ;
+
+body {
+    margin: 0;
+}
+.nav {
+    width: 100%;
+    height: 111px;
+    z-index: 50000000000000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    &__top {
+        height: 50px;
+        background: #EEEEEE;
+        border-bottom: 1px solid #979797;
+        &-content {
+            text-transform: uppercase;
+            width: 216px;
+            height: 32px;
+            // font-family: .AppleSystemUIFont;
+            font-size: 14px;
+            color: #666666;
+            letter-spacing: 1px;
+            text-align: center;
+            line-height: 16px;
+            margin: 0 auto;
+            font-family: 'Open Sans';
+            @media (min-width: $breakpoint-tablet) {
+                padding-top: 9px;
+                width: 256px;
+            }
+        }
+    }
+    &__bottom {
+        height: 61px;
+        background-color: white;
+        border-bottom: 1px solid #979797;
+    }
+    &__item {
+        position: relative;
+        display: block;
+        height: 100%;
+        text-align: center;
+        @media (min-width: $breakpoint-tablet) {
+            padding-top: 21px;
+            // width: 20%;
+            margin: 0 auto;
+            font-family: 'Open Sans';
+
+
+            font-size: 16px;
+            color: #000000;
+            letter-spacing: 1px;
+            // line-height: 52px;
+            // font-family: 'Raleway';
+            &:hover {
+                cursor: pointer;
+                opacity: .7;
+            }
+        }
+            &--logo {
+                width: 50%;
+                /* margin-left: 10px; */
+                padding-top: 10px;
+                @media (min-width: $breakpoint-tablet) {
+                    padding-top: 9px;
+                    width: 9%;
+                    text-align: left;
+                    margin-left: 0;
+                }
+            }
+            &--hamburger {
+                width: 25%;
+                // margin-left: -10px;
+
+            }
+            &--search {
+                width: 10%;
+                /* padding-left: 5%; */
+                padding-top: 16px;
+                @media (min-width: $breakpoint-tablet) {
+                    width: 3%;
+                    position: relative;
+                    padding-top: 18px;
+                }
+            }
+            &--shop {
+                width: 10%;
+                padding-top: 16px;
+                @media (min-width: $breakpoint-tablet) {
+                    width: 4%;
+                    position: relative;
+                    margin-left: 6px;
+                    margin-right: 0;
+                    padding-top: 18px;
+                }
+            }
+
+        &-wrap {
+            list-style-type: none;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 0;
+            @media (min-width: $breakpoint-tablet) {
+                display: none;
+            }
+            &-lg {
+                display: none;
+                @media (min-width: $breakpoint-tablet) {
+                    margin: 0 auto;
+                    list-style-type: none;
+                    width: 91%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    
+
+    &__hamb {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        padding: .5%;
+        margin: 10px 1%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: white;
+        border: none;
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+        &:active {
+            outline: none;
+        }
+    }
+    
+
+    &__rect1, &__rect2, &__rect3 {
+        position: relative;
+        width: 60%;
+        height: 2px;
+        background-color: black;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+             transition: all 0.3s ease-out;
+    }
+
+    &__show-rect {
+        display: block;
+        margin: 6px 0 6px 0;
+    }
+    &__rect-bottom {
+        margin: -12px 0 7px 0;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);   
+    }
+    &__rect-top {
+        margin: 12px 0 10px 0;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    &__rect-hide {
+        display: none;
+    }
+}
+
+
+
+.arrow-right {
+    text-align: center;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 6px solid
+  }
+
+
+
+
+
+
+
+
+
+.dropdown {
+    width: 100%;
+    left: 0;
+    height: 430px;
+    z-index: 5;
+    position: relative;
+    background-color: white;
+    overflow-y: scroll;
+
+    &__ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 0;
+    }
+    &__link {
+        // font-family: .AppleSystemUIFont;
+        padding-left: 19px;
+        font-size: 18px;
+        color: #000000;
+        letter-spacing: 1px;
+        line-height: 52px;
+        font-family: 'Raleway';
+        &:hover {
+            cursor: pointer;
+            opacity: .7;
+        }
+        &--small {
+            color: #666666;
+            font-size: 16px;
+        }
+    }
+    &__arrow {
+        float: right;
+        content: "";
+        margin-top: 17px;
+        margin-right: 19px;
+        border: solid rgba(0,0,0,50);
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+}
+
+
+.sports-nav {
+    width: 100%;
+    left: 0;
+    height: 520px;
+    z-index: 6;
+    top: 1;
+    top: 113px;
+    position: absolute;
+    background-color: white;
+    overflow-y: scroll;
+    @media (min-width: $breakpoint-tablet) {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+    //  width: 97%;
+    height: auto;
+     overflow-y: none;
+    }
+    &__wrap {
+        @media (min-width: $breakpoint-tablet) {
+            width: 100%;
+            background-color: white;
+            height: 520px;
+           }
+        
+    }
+    &__ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 0;
+        @media (min-width: $breakpoint-tablet) {
+            width: 8%;
+            padding-left: .5%;
+            padding-top: 12px;
+           }
+    }
+    &__link {
+        // font-family: .AppleSystemUIFont;
+        padding-left: 19px;
+        font-size: 18px;
+        color: #000000;
+        letter-spacing: 1px;
+        line-height: 52px;
+        font-family: 'Raleway';
+        @media (min-width: $breakpoint-tablet) {
+            font-size: 16px;
+           }
+        &:hover {
+            cursor: pointer;
+            opacity: .7;
+        }
+        &--small {
+            color: #666666;
+            font-size: 16px;
+        }
+    }
+    &__title {
+        padding-left: 19px;
+        font-size: 18px;
+        color: #000000;
+        letter-spacing: 1px;
+        line-height: 52px;
+        font-family: 'Raleway';
+        display: inline-block;
+        width: 100%;
+        padding-left: 0;
+        @media (min-width: $breakpoint-tablet) {
+            display: none;
+           }
+        &-center {
+            width: 100%;
+            margin-left: -83px;
+            // font-family: .SFNSDisplay-Regular;
+            font-size: 20px;
+            color: #000000;
+            letter-spacing: 1.11px;
+            text-align: center;
+            line-height: 52px;
+        }
+    }
+    &__arrow {
+        float: right;
+        content: "";
+        margin-top: 17px;
+        margin-right: 19px;
+        border: solid rgba(0,0,0,50);
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        @media (min-width: $breakpoint-tablet) {
+            display: none;
+           }
+        &-back {
+            margin-right: 7px;
+            margin-left: 19px;
+            float: left;
+            content: "";
+            margin-top: 21px;
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+            @media (min-width: $breakpoint-tablet) {
+                display: none;
+               }
+            &-wrap {
+                float: left;
+                width: 84px;
+                // font-family: .AppleSystemUIFont;
+                font-size: 16px;
+                color: #000000;
+                letter-spacing: 0.89px;
+                line-height: 52px;
+                &:hover {
+                    opacity: .8;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+.mlb-nav {
+    width: 100%;
+    left: 0;
+    height: 520px;
+    z-index: 8;
+    top: 1;
+    top: 120px;
+    position: absolute;
+    background-color: white;
+    overflow-y: scroll;
+    @media (min-width: $breakpoint-tablet) {
+        overflow-y: none;
+       }
+
+    &__ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 0;
+        @media (min-width: $breakpoint-tablet) {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 20%;
+            padding-top: 10px;
+            margin-bottom: 0;
+           }
+           &-end {
+            padding-top: 12px;
+            font-size: 11px;
+            color: #666666;
+            letter-spacing: 0.5px;
+            text-align: left;
+            line-height: 40px;
+            justify-content: flex-start;
+            @media (min-width: $breakpoint-tablet) {
+                padding-top: 26px;
+               }
+            // padding-top: 39px !important;
+            
+           }
+        //    &-non-title {
+        //     padding-top: 27px;
+        // }
+    }
+    &__link {
+        // font-family: .AppleSystemUIFont;
+        padding-left: 19px;
+        font-size: 18px;
+        color: #000000;
+        letter-spacing: 1px;
+        line-height: 52px;
+        font-family: 'Raleway';
+        @media (min-width: $breakpoint-tablet) {
+            // font-family: .AppleSystemUIFont;
+            width: 190px;
+            font-size: 11px;
+            color: #666666;
+            letter-spacing: 0.5px;
+            text-align: left;
+            line-height: 40px;
+           }
+        &:hover {
+            cursor: pointer;
+            opacity: .7;
+        }
+        &--small {
+            color: #666666;
+            font-size: 16px;
+            @media (min-width: $breakpoint-tablet) {
+                font-size: 11px;
+               }
+        }
+        & a {
+            padding-left: 39px;
+            text-decoration: none;
+            color: #000000;
+            @media (min-width: $breakpoint-tablet) {
+                font-size: 12px;
+               }
+        }
+    }
+    &__title {
+        padding-left: 19px;
+        font-size: 18px;
+        color: #000000;
+        letter-spacing: 1px;
+        line-height: 52px;
+        font-family: 'Raleway';
+        display: inline-block;
+        width: 100%;
+        padding-left: 0;
+        /* MLB Copy: */
+        @media (min-width: $breakpoint-tablet) {
+        font-size: 36px;
+        color: #000000;
+        letter-spacing: 0.83px;
+        text-align: left;
+        line-height: 27px;
+        }
+        &-center {
+            width: 100%;
+            margin-left: -83px;
+            // font-family: .SFNSDisplay-Regular;
+            font-size: 20px;
+            color: #000000;
+            letter-spacing: 1.11px;
+            text-align: center;
+            line-height: 52px;
+            
+
+
+            @media (min-width: $breakpoint-tablet) {
+                width: 190px;
+                padding-left: 20px;
+                margin-left: 0;
+                font-size: 36px;
+                color: #000000;
+                letter-spacing: 0.83px;
+                text-align: left;
+                line-height: 27px;
+
+
+            }
+        }
+    }
+    &__arrow {
+        float: right;
+        content: "";
+        margin-top: 17px;
+        margin-right: 19px;
+        border: solid rgba(0,0,0,50);
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        &-back {
+            margin-right: 7px;
+            margin-left: 19px;
+            float: left;
+            content: "";
+            margin-top: 21px;
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+            &-wrap {
+                float: left;
+                width: 84px;
+                // font-family: .AppleSystemUIFont;
+                font-size: 16px;
+                color: #000000;
+                letter-spacing: 0.89px;
+                line-height: 52px;
+                &:hover {
+                    opacity: .8;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &__logo {
+        position: absolute;
+        margin-top: 12px;
+        @media (min-width: $breakpoint-tablet) {
+            // display: flex;
+            margin-top: 6px;
+        }
+    }
+}
+
+.a-spot {
+    display: block;
+    overflow: auto;
+    position: relative;
+    margin-top: 83px;
+    @media (min-width: $breakpoint-tablet) {
+        // display: flex;
+        height: 600px;
+        margin-top: 111px;
+    }
+    
+    &__bball {
+        background-image: url(../images/basketball.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        position: relative;
+        background-position-x: 66%;
+        padding: 93px 0 133px;
+        -webkit-clip-path: polygon(0% 0%, 0% 0%, 300% 0%, 0 100%);
+        clip-path: polygon(0% 0%, 0% 0%, 300% 0%, 0 100%);
+
+        @media (min-width: $breakpoint-tablet) {
+            clip-path: polygon(0% 0%, 0% -20%, 95% 0%, 0 320%);
+            height: 600px;
+            left: 0;
+            width: 60.5%;
+            position: absolute;
+            z-index: 2;
+            padding: 0;
+        }
+        
+
+
+        &-content {
+            position: relative;
+            z-index: 5;
+            top: 21%;
+            font-family: 'Raleway';
+            @media (min-width: $breakpoint-tablet) {
+                top: 39%;
+                text-align: center;
+                margin-right: 20%;
+            }
+            
+        }
+
+        &-title {
+            // font-family: .SFNSDisplay-Regular;
+            font-size: 45px;
+            color: #FFFFFF;
+            letter-spacing: 0.5px;
+            text-align: center;
+            line-height: 36px;
+        }
+        &-button {
+            // font-family: .AppleSystemUIFont;
+            font-size: 16px;
+            color: #FFFFFF;
+            letter-spacing: 0.89px;
+            background: rgba(0,0,0,0.80);
+            border: 1px solid #FFFFFF;
+            height: 36px;
+            width: 200px;
+            &-wrap {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+        
+  
+    
+
+    &__lifestyle {
+        position: relative;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3))), url(../images/lifestyle.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../images/lifestyle.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        width: 100%;
+        margin-top: -133px;
+        -webkit-clip-path: polygon(0% 0%, 0% 1%, 300% 100%, 0 100%);
+        clip-path: polygon(0% 0%, 0% 1%, 300% 100%, 0 100%);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        background-position-x: 80%;
+        padding: 113px 0;
+
+        @media (min-width: $breakpoint-tablet) {
+            // clip-path: polygon(0% 0%, 0% -84%, 180% 232%, 0 100%);
+            
+            height: 600px;
+            position: absolute;
+            right: 0;
+            clip-path: polygon(0% 0%, 0% -284%, 120% 176%, 0 100%);
+            width: 60.5%;
+            background-position-x: 56%;
+            padding: 0;
+            margin-top: 0;
+        }
+
+        // clip-path: polygon(0% 0%, 0% -20%, 200% 210%, 0% 100%);
+
+        &-content {
+            position: relative;
+            z-index: 5;
+            top: 30%;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            font-family: 'Raleway';
+            @media (min-width: $breakpoint-tablet) {
+                top: 39%;
+                text-align: center;
+                margin-right: 20%;
+            }
+        }
+
+        &-title {
+            // font-family: .SFNSDisplay-Regular;
+            font-size: 45px;
+            color: #FFFFFF;
+            letter-spacing: 0.5px;
+            text-align: center;
+            line-height: 36px;
+        }
+        &-button {
+            // font-family: .AppleSystemUIFont;
+            font-size: 16px;
+            color: #FFFFFF;
+            letter-spacing: 0.89px;
+            background: rgba(0,0,0,0.80);
+            border: 1px solid #FFFFFF;
+            height: 36px;
+            width: 200px;
+            &-wrap {
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+                
+            }
+        }
+    }
+}
+
+
+.b-spot {
+    position: relative;
+    min-width: 320px;
+    width: 100%;
+    background-color: #EEEEEE;
+    padding-top: 19px;
+    padding-bottom: 32px;
+    @media (min-width: $breakpoint-tablet) {
+        z-index: 3;
+        margin-top: 63px;
+        display: flex;
+        flex-direction: row;
+        width: 91%;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+    &__wrap {    
+        margin-top: -63px;
+        @media (min-width: $breakpoint-tablet) {
+            margin-top: 0;
+            padding-top: 19px;
+            background-color: #EEEEEE;
+        }
+    }
+
+        // margin-top: -16px;
+    &__image-wrap {
+        width: 87.5%;
+        margin: 0 auto;
+        background-color: white;
+        @media (min-width: $breakpoint-tablet) {
+            width: 91%;
+        }
+    }
+    &__image {
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../images/baseball.png);
+        // height: 280px;
+        background-position: initial;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid #979797;
+        @media (min-width: $breakpoint-tablet) {
+            height: 460px;
+        }
+    }
+    &__content {
+        text-align: center;
+        @media (min-width: $breakpoint-tablet) {
+            padding-top: 70px;
+            width: 81%;
+            position: relative;
+            padding-left: 22px;
+            text-align: start;
+        }
+    }
+    &__title1 {
+        color: white;
+        font-size: 28px;
+        margin-bottom: 0px;
+        padding-top: 30px;
+        font-family: 'Open Sans';
+        @media (min-width: $breakpoint-tablet) {
+            // font-family: .SFNSDisplay-Regular;
+            font-size: 36px;
+            color: #FFFFFF;
+            letter-spacing: 0.5px;
+            line-height: 27px;
+            padding-left: 121px;
+            text-align: start;
+        } 
+    }
+
+    &__title2 {
+        margin-top: 0;
+        color: white;
+        font-size: 45px;
+        font-family: 'Raleway';
+        @media (min-width: $breakpoint-tablet) {
+            padding-top: 16px;
+            font-size: 72px;
+            color: #FFFFFF;
+            letter-spacing: 0.5px;
+            text-align: start;
+            line-height: 63px;
+            margin-bottom: 30px;
+        } 
+        &--br {
+            @media (min-width: $breakpoint-tablet) {
+                display: none;
+            } 
+        }
+    }
+    &__button {
+        // font-family: .AppleSystemUIFont;
+        font-size: 16px;
+        color: #FFFFFF;
+        letter-spacing: 0.89px;
+        background: rgba(0,0,0,0.80);
+        border: 1px solid #FFFFFF;
+        height: 46px;
+        width: 200px;
+        @media (min-width: $breakpoint-tablet) {
+            width: 300px;   
+        }
+        &-wrap {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0px 60px;
+            @media (min-width: $breakpoint-tablet) {
+                padding: 0;
+                padding-left: 80px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.dark-button:hover {
+    background-color: #EEEEEE;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+}
+
+.ws-caps {
+    width: 87.5%;
+    background-color: white;
+    margin: 0 auto;
+    @media (min-width: $breakpoint-tablet) {
+        width: 23%;
+        height: 460px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin: 0 auto;
+        // float: right;
+    }
+    &__title {
+        // font-family: .SFNSDisplay-Regular;
+        font-size: 20px;
+        color: #000000;
+        letter-spacing: 0.5px;
+        text-align: center;
+        margin-top: 0;
+        padding-top: 20px;
+        font-family: 'Nunito';
+        &:after {
+            position: absolute;
+            content: '';
+            height: 1px;
+            background-color: #CCCCCC;
+            z-index: 30000;
+            width: 200px;
+            left: 0;
+            margin-top: 26px;
+            left: 50%;
+            margin-left: -100px;
+            @media (min-width: $breakpoint-tablet) {
+                display: none;
+            }
+        }
+    }
+    &__wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        @media (min-width: $breakpoint-tablet) {
+            flex-direction: column;
+        }
+    }
+    &__item {
+        &-1 {
+            width: 40%;
+            text-align: center;
+            @media (min-width: $breakpoint-tablet) {
+                width: auto;
+            }
+        }
+        &-2 {
+            width: 40%;
+            text-align: center;
+            @media (min-width: $breakpoint-tablet) {
+                width: auto;
+            } 
+        }
+    }
+    &__image {
+        &-1 {
+            background-image: url(../images/cubs-hat.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            // width: 100%;
+            height: 82px;
+            width: 110px;
+            position: relative;
+            margin: 0 auto;
+            @media (min-width: $breakpoint-tablet) {
+                background-size: auto;
+            } 
+
+        }
+        &-2 {
+            background-image: url(../images/cubs-hat2.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            // width: 100%;
+            height: 82px;
+            width: 110px;
+            position: relative;
+            margin: 0 auto;
+            @media (min-width: $breakpoint-tablet) {
+                background-size: auto;
+            } 
+        }
+    }
+    &__content {
+            // font-family: .AppleSystemUIFont;
+            font-size: 13px;
+            color: #666666;
+            letter-spacing: 0.38px;
+            text-align: center;
+            line-height: 14px;
+            padding-top: 3px;
+            margin-top: 0;
+            font-family: 'open sans';
+        &-title {
+            // font-family: .AppleSystemUIFont;
+            font-size: 13px;
+            color: #000000;
+            letter-spacing: 0.34px;
+            text-align: center;
+            line-height: 14px;
+            margin-bottom: 0;
+            font-family: 'nunito';
+        }
+    }
+}
+
+
+.trending {
+    padding-bottom: 26px;
+    @media (min-width: $breakpoint-tablet) {
+        // width: 91%;
+        margin: 0 auto;
+    } 
+    &__title {
+        font-family: 'open sans';
+        font-size: 24px;
+        color: #000000;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 20px;
+        padding-bottom: 10px;
+    }
+}
+
+.slider {
+    margin: 0 auto;
+    text-align: center;
+    &__image {
+        background-repeat: no-repeat;
+        // margin: auto 0;
+        height: 60%;
+        width: 156px;
+        background-size: contain;
+        margin: 0 auto;
+        &--1 {
+            background-image: url(../images/slider-hat1.png);
+            // background-repeat: no-repeat;
+            // margin: auto 0;
+            // height: 65%;
+            // width: 172px;
+            // background-size: contain;
+            // margin: 0 auto;
+
+        }
+        &--2 {
+            background-image: url(../images/slider-hat2.png);
+        }
+        &--3 {
+            background-image: url(../images/slider-hat3.png);
+        }
+        &--4 {
+            background-image: url(../images/slider-hat4.png);
+            // margin-left: 58px;
+        }
+        &--5 {
+            background-image: url(../images/slider-hat5.png);
+            // margin-left: 58px;
+        }
+        &--6 {
+            background-image: url(../images/slider-hat6.png);
+            // margin-left: 58px;
+        }
+        &-wrap {
+            height: 172px !important;
+            // width: 236px;
+            margin: 0 auto;
+            padding-left: 2px;
+            &--2 {
+                padding-left: 6px;
+            }
+            &--3 {
+                padding-left: 3px;
+            }
+        }
+    }
+    &__content {
+        
+        &-title {
+            // font-family: .AppleSystemUIFont;
+            font-family: 'open sans';
+            font-size: 12px;
+            color: #666666;
+            letter-spacing: 0.43px;
+            text-align: center;
+            line-height: 16px;
+            padding-top: 9px;
+            padding-bottom: 3px;
+        }
+        &-description {
+            // font-family: .AppleSystemUIFont;
+            font-family: 'open sans';
+            font-size: 16px;
+            color: #000000;
+            letter-spacing: 0.42px;
+            text-align: center;
+            line-height: 18px;
+        }
+    }
+}
+
+
+.to-top {
+    width: 100%;
+    height: 70px;
+    background-color: #EEEEEE;
+    & a {
+        color: #000000;
+        text-decoration: none;
+    }
+    &__link {
+        // font-family: .AppleSystemUIFont;
+        font-size: 14px;
+        color: #000000;
+        letter-spacing: 0.78px;
+        line-height: 52px;
+        text-align: center;
+        font-family: 'open sans';
+        padding-top: 10px;
+        &:before {
+            margin-top: 23px;
+            margin-left: -18px;
+            content: '';
+            position: absolute;
+            height: 7px;
+            width: 7px;
+            border: 1.5px #000000;
+            border-style: none none solid solid;
+            -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+        }
+    }
+}
+
+
+.footer {
+    // height: 524px;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 10px;
+    @media (min-width: $breakpoint-tablet) {
+        padding-bottom: 20px;
+    } 
+    &__top-wrap {
+        width: 93%;
+        margin: 0 auto;
+        padding-top: 30px;
+        overflow: auto;
+
+    }
+    &__ne-icon {
+        display: none;
+        @media (min-width: $breakpoint-tablet) {
+            float: left;
+            display: inline-block;
+            height: 40px;
+            width: 50px;
+            margin-top: -9px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url(../images/nelogowhite.png);
+        } 
+    }
+    &__logo {
+        height: 30px;
+        width: 30px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0 6%;
+        @media (min-width: $breakpoint-tablet) {
+            margin: 0 10px;
+        } 
+        &--insta {
+            height: 28px;
+            background-image: url(../images/insta.png);
+        }
+        &--twitter {
+            background-image: url(../images/twitter.png);
+        }
+        &--facebook {
+            height: 25px;
+            background-image: url(../images/facebook.png);
+        }
+        &--youtube {
+            background-image: url(../images/youtube.png);
+        }
+        &--google {
+            background-image: url(../images/googleicon.png);
+        }
+        &-wrap {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            @media (min-width: $breakpoint-tablet) {
+                justify-content: flex-end;
+            } 
+        }
+    }
+
+    &__mid-wrap {
+        display: flex;
+        flex-direction: row;
+        width: 91%;
+        margin: 0 auto;        
+        margin-top: 17px;
+        margin-bottom: 17px;
+        padding-top: 5px;
+        border-top: 1px solid #333333;
+        // justify-content: space-between;
+        @media (min-width: $breakpoint-tablet) {
+            justify-content: space-around; 
+            // margin-top: 20px;
+            padding-top: 10px
+            
+        } 
+    }
+    &__column-wrap {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        width: 50%;
+        font-family: 'open sans';
+        list-style-type: none;
+        list-style: none;
+        list-style-position: inside;
+        margin: 0;
+        padding: 0;
+        margin-left: 0;
+        padding-left: 0;
+        @media (min-width: $breakpoint-tablet) {
+            width: auto;
+        } 
+        & li a {
+            text-decoration: none;
+            color: #FFFFFF;
+            &:hover {
+                opacity: .8;
+            }
+        }
+        &--left {
+            width: 60%;
+            @media (min-width: $breakpoint-tablet) {
+                width: auto;
+            } 
+        }
+        &--right {
+            width: 40%;
+            @media (min-width: $breakpoint-tablet) {
+                width: auto;
+            } 
+        }
+    }
+}
+
+
+
+.about-new-era {
+    &__title {
+        font-size: 16px;
+        color: #FFFFFF;
+        letter-spacing: 0.1px;
+        line-height: 40px;
+    }
+    &__link {
+        /* History Careers Corp: */
+        // font-family: .AppleSystemUIFont;
+        font-size: 12px;
+        color: #FFFFFF;
+        letter-spacing: 0.43px;
+        text-align: left;
+        line-height: 32px;
+        &--sm {
+            @media (min-width: $breakpoint-tablet) {
+                display: none;
+            } 
+        }
+    }
+    &__cont {
+        display: none;
+        @media (min-width: $breakpoint-tablet) {
+            display: flex;
+            padding-top: 41px;
+            // width: 30%;
+            width: auto;
+        } 
+    }
+}
+
+.support {
+    &__title {
+        font-size: 16px;
+        color: #FFFFFF;
+        letter-spacing: 0.1px;
+        line-height: 40px;
+    }
+    &__link {
+        // font-family: .AppleSystemUIFont;
+        font-size: 12px;
+        color: #FFFFFF;
+        letter-spacing: 0.43px;
+        text-align: left;
+        line-height: 32px;
+    }
+}
+
+.footer-bottom {
+
+    width: 91%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 17px;
+    border-top: 1px solid #333333;
+    // padding-bottom: 10px;
+
+    @media (min-width: $breakpoint-tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+
+    &__copyright {
+        font-family: 'open sans';
+        font-size: 12px;
+        color: #FFFFFF;
+        letter-spacing: 0.43px;
+        text-align: center;
+        @media (min-width: $breakpoint-tablet) {
+            margin: auto 0;
+        } 
+    }
+    &__link-wrap {
+        list-style: none;
+        color: #FFFFFF;
+        padding-left: 0;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        // justify-content: space-evenly;
+        
+        justify-content: center;
+        @media (min-width: $breakpoint-tablet) {
+            margin: auto 0;
+            width: 50%;
+            justify-content: flex-end;
+        } 
+        
+    }
+    &__link {
+        font-family: 'open sans';
+        list-style: none;
+        color: #FFFFFF;
+        font-size: 12px;
+        color: #FFFFFF;
+        letter-spacing: 0.43px;
+        text-align: center;
+        margin-left: 2%;
+        margin-right: 1%;
+        
+        & a {
+            text-decoration: none;
+            color: #FFFFFF;
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+}
+
+
+
+.active-nav {
+    display: block !important;
+}
+
+.hidden {
+    display: none !important;
+    &-lg {
+        @media (min-width: $breakpoint-tablet) {
+            display: none !important
+        }
+    }
+}
+
+
+
+
+
