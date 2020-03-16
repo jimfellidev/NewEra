@@ -30,11 +30,14 @@ header {
         color: #000000;
         letter-spacing: 0.5px;
         line-height: 63px;
+        padding-top: 18px;
         @media (min-width: $breakpoint-tablet) {
             font-size: 54px;
-            color: #000000;
-            letter-spacing: 0.5px;
-            line-height: 63px;
+            padding-top: 30px;
+            text-align: left;
+            width: 93%;
+            margin: 0 auto;
+            padding-bottom: 30px;
         } 
       }
 
@@ -71,22 +74,35 @@ header {
             margin-top: 40px;
         } 
     }
+    &__h3-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 12px;
+        @media (min-width: $breakpoint-tablet) {
+            margin-top: 0px;
+        } 
+        &:hover {
+            cursor: pointer;
+        }
+
+    }
     &__type-title {
         font-family: 'open sans';
         font-size: 18px;
         color: #000000;
         letter-spacing: 0.2px;
         line-height: 18px;
-        margin-top: 11px;
         margin-bottom: 11px;
         @media (min-width: $breakpoint-tablet) {
-            margin-bottom: 36px;
+            margin-top: 11px;
+            margin-bottom: 16px;
         } 
     }
     &__close {
         position: absolute;
         right: 6px;
-        top: -4px;
+        top: -9px;
         width: 16px;
         height: 16px;
         color: #979797;
@@ -102,20 +118,202 @@ header {
         color: #000000;
         letter-spacing: 0.5px;
         line-height: 36px;
+        @media (min-width: $breakpoint-tablet) {
+            margin-top: -2px;
+        } 
     }
     &__checkbox-wrap {
         margin-top: -22px;
-        padding-top: 30px;
+        padding-top: 6px;
         padding-left: 16px;
         box-shadow: 0px 0px 5px -2px;
+        padding-bottom: 16px;
         @media (min-width: $breakpoint-tablet) {
             box-shadow: none;
             padding-left: 0;
             padding-top: 0px;
+            margin-top: 0;
         } 
     }
+
+
     
   }
+
+
+.gender-selector {
+    &__title {
+        font-family: 'open sans';
+        font-size: 18px;
+        color: #000000;
+        letter-spacing: 0.2px;
+        line-height: 18px;
+        margin-top: 11px;
+        margin-bottom: 16px;
+        @media (min-width: $breakpoint-tablet) {
+            margin-bottom: 16px;
+            padding-top: 10px;
+            
+        } 
+
+    }
+    &__checkbox {
+        font-family: 'open sans';
+        font-size: 18px;
+        color: #000000;
+        letter-spacing: 0.2px;
+        line-height: 18px;
+        margin-top: 11px;
+        margin-bottom: 11px;
+        @media (min-width: $breakpoint-tablet) {
+            margin-bottom: 0px;
+        } 
+    }
+}
+
+
+.carrot {
+
+    &__down {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-left: 1.5px solid black;
+        border-bottom: 1.5px solid black;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        margin-right: 26px;
+        margin-top: 26px;
+
+        @media (min-width: $breakpoint-tablet) {
+            // position: absolute;
+            content: '';
+            width: 8px;
+            // margin-top: 2px;
+            margin-top: 22px;
+            // margin-left: 50px;
+            height: 8px;
+            border-left: 1.5px solid black;
+            border-bottom: 1.5px solid black;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            right: auto;
+        } 
+        &--type {
+            // margin-left: 81px;
+            @media (min-width: $breakpoint-tablet) {
+                margin-top: 12px;
+            }
+        }
+        &--gender {
+            margin-top: 15px;
+            @media (min-width: $breakpoint-tablet) {
+                margin-top: 22px;
+            }
+        }
+        &--size {
+            margin-top: 12px;
+            @media (min-width: $breakpoint-tablet) {
+                margin-top: 22px;
+            }
+        }
+        
+    }
+
+    &__up {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-left: 1.5px solid black;
+        border-bottom: 1.5px solid black;
+        // -webkit-transform: rotate(-135deg);
+        transform: rotate(135deg);
+        margin-right: 26px;
+        margin-top: 26px;
+
+        @media (min-width: $breakpoint-tablet) {
+            // position: absolute;
+            content: '';
+            width: 8px;
+            // margin-top: 2px;
+            margin-top: 22px;
+            // margin-left: 50px;
+            height: 8px;
+            border-left: 1.5px solid black;
+            border-bottom: 1.5px solid black;
+            -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+            right: auto;
+        } 
+        &--type {
+            // margin-left: 81px;
+            @media (min-width: $breakpoint-tablet) {
+                margin-top: 12px;
+            }
+        }
+        &--gender {
+            // margin-left: 51px;
+            @media (min-width: $breakpoint-tablet) {
+                
+            }
+        }
+        &--size {
+            // margin-left: 86px;
+            @media (min-width: $breakpoint-tablet) {
+                // margin-left: 86px;
+            }
+        }
+            
+    }
+    
+}
+
+
+.test-wrap {
+    width: 100%;
+}
+
+.size-selector {
+    &__title {
+        font-family: 'open sans';
+        font-size: 18px;
+        color: #000000;
+        letter-spacing: 0.2px;
+        line-height: 18px;
+        margin-top: 11px;
+        margin-bottom: 11px;
+        @media (min-width: $breakpoint-tablet) {
+            margin-bottom: 16px;
+            padding-top: 10px;
+            // &:after {
+            //     position: absolute;
+            //     content: '';
+            //     margin-left: 90px;
+            //     width: 8px;
+            //     height: 8px;
+            //     border-left: 1.5px solid black;
+            //     /* background-color: black; */
+            //     border-bottom: 1.5px solid black;
+            //     transform: rotate(-45deg);
+            // }
+        } 
+
+    }
+    &__checkbox {
+        font-family: 'open sans';
+        font-size: 18px;
+        color: #000000;
+        letter-spacing: 0.2px;
+        line-height: 18px;
+        margin-top: 11px;
+        margin-bottom: 11px;
+        @media (min-width: $breakpoint-tablet) {
+            margin-bottom: 0px;
+        } 
+    }
+}
+
+
   .main {
     max-width: 1000px;
     margin: auto;
@@ -130,6 +328,15 @@ header {
     margin: 8px auto;
     background-color: white;
     width: 93%;
+
+    &__wrap {
+    
+        @media (min-width: 768px) {
+            padding-top: 10px;
+            padding-right: 6px;
+        } 
+    }
+
     &__content {
         background-color: white;
         padding: 5px;
@@ -138,6 +345,10 @@ header {
         @media (min-width: $breakpoint-tablet) {
             padding: 15px;
         }         
+        &:hover {
+            opacity: .7;
+            cursor: pointer;
+        }
     }
     &__button {
         background-color: #FFFFFF;
@@ -151,6 +362,7 @@ header {
         letter-spacing: 0.89px;
         text-align: center;
         margin-right: 12px;
+        margin-left: 10%;
         &:active {
             background-color: #666;
             color: white;
@@ -163,6 +375,7 @@ header {
       position: absolute;
       width: 93%;
       background-color: white;
+      min-width: 290px;
       @media (min-width: $breakpoint-tablet) {
         display: none;
     } 
@@ -170,7 +383,7 @@ header {
     &__button-wrap {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         padding-top: 24px;
         padding-bottom: 20px;
         @media (min-width: $breakpoint-tablet) {
@@ -197,7 +410,10 @@ header {
             
         } 
         &--1 {
-            background-image: url(../images/phillies/phillies1.png);
+            background-image: url(../images/phillies/phillies6.png);
+            // &:hover {
+            //     opacity: .7;
+            // }
         }
         &--2 {
             background-image: url(../images/phillies/phillies2.png);
@@ -212,7 +428,7 @@ header {
             background-image: url(../images/phillies/phillies5.png);
         }
         &--6 {
-            background-image: url(../images/phillies/phillies6.png);
+            background-image: url(../images/phillies/phillies1.png);
         }
         &--7 {
             background-image: url(../images/phillies/phillies7.png);
@@ -256,12 +472,12 @@ header {
         &--20{
             background-image: url(../images/phillies/phillies20.png);
         }
-        &--1 {
-            background-image: url(../images/phillies/phillies1.png);
-        }
-        &--1 {
-            background-image: url(../images/phillies/phillies1.png);
-        }
+        // &--1 {
+        //     background-image: url(../images/phillies/phillies1.png);
+        // }
+        // &--1 {
+        //     background-image: url(../images/phillies/phillies1.png);
+        // }
     }
     &__title {
         font-family: 'open sans';
@@ -307,6 +523,7 @@ header {
     // text-align: right;
     outline: none;
     border: none;
+    margin-right: 10%;
     &:hover {
         cursor: pointer;
         color: black;
@@ -327,6 +544,9 @@ header {
     @media (min-width: 768px) {
         width: 33.3%;
     } 
+    & a {
+        text-decoration: none;
+    }
   }
   
   /* Clear floats after hatss */
@@ -361,4 +581,8 @@ header {
   .btn.active {
     background-color: #666;
      color: white;
+  }
+
+  .hidden {
+      display: none;
   }

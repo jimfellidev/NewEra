@@ -25,14 +25,17 @@ body {
   color: #000000;
   letter-spacing: 0.5px;
   line-height: 63px;
+  padding-top: 18px;
 }
 
 @media (min-width: 768px) {
   .phillies-filter__title {
     font-size: 54px;
-    color: #000000;
-    letter-spacing: 0.5px;
-    line-height: 63px;
+    padding-top: 30px;
+    text-align: left;
+    width: 93%;
+    margin: 0 auto;
+    padding-bottom: 30px;
   }
 }
 
@@ -85,26 +88,50 @@ body {
   }
 }
 
+.filter__h3-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 12px;
+}
+
+@media (min-width: 768px) {
+  .filter__h3-wrap {
+    margin-top: 0px;
+  }
+}
+
+.filter__h3-wrap:hover {
+  cursor: pointer;
+}
+
 .filter__type-title {
   font-family: 'open sans';
   font-size: 18px;
   color: #000000;
   letter-spacing: 0.2px;
   line-height: 18px;
-  margin-top: 11px;
   margin-bottom: 11px;
 }
 
 @media (min-width: 768px) {
   .filter__type-title {
-    margin-bottom: 36px;
+    margin-top: 11px;
+    margin-bottom: 16px;
   }
 }
 
 .filter__close {
   position: absolute;
   right: 6px;
-  top: -4px;
+  top: -9px;
   width: 16px;
   height: 16px;
   color: #979797;
@@ -123,12 +150,19 @@ body {
   line-height: 36px;
 }
 
+@media (min-width: 768px) {
+  .filter__label {
+    margin-top: -2px;
+  }
+}
+
 .filter__checkbox-wrap {
   margin-top: -22px;
-  padding-top: 30px;
+  padding-top: 6px;
   padding-left: 16px;
   -webkit-box-shadow: 0px 0px 5px -2px;
           box-shadow: 0px 0px 5px -2px;
+  padding-bottom: 16px;
 }
 
 @media (min-width: 768px) {
@@ -137,6 +171,161 @@ body {
             box-shadow: none;
     padding-left: 0;
     padding-top: 0px;
+    margin-top: 0;
+  }
+}
+
+.gender-selector__title {
+  font-family: 'open sans';
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0.2px;
+  line-height: 18px;
+  margin-top: 11px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .gender-selector__title {
+    margin-bottom: 16px;
+    padding-top: 10px;
+  }
+}
+
+.gender-selector__checkbox {
+  font-family: 'open sans';
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0.2px;
+  line-height: 18px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+@media (min-width: 768px) {
+  .gender-selector__checkbox {
+    margin-bottom: 0px;
+  }
+}
+
+.carrot__down {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-left: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-right: 26px;
+  margin-top: 26px;
+}
+
+@media (min-width: 768px) {
+  .carrot__down {
+    content: '';
+    width: 8px;
+    margin-top: 22px;
+    height: 8px;
+    border-left: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .carrot__down--type {
+    margin-top: 12px;
+  }
+}
+
+.carrot__down--gender {
+  margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+  .carrot__down--gender {
+    margin-top: 22px;
+  }
+}
+
+.carrot__down--size {
+  margin-top: 12px;
+}
+
+@media (min-width: 768px) {
+  .carrot__down--size {
+    margin-top: 22px;
+  }
+}
+
+.carrot__up {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-left: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  margin-right: 26px;
+  margin-top: 26px;
+}
+
+@media (min-width: 768px) {
+  .carrot__up {
+    content: '';
+    width: 8px;
+    margin-top: 22px;
+    height: 8px;
+    border-left: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .carrot__up--type {
+    margin-top: 12px;
+  }
+}
+
+.test-wrap {
+  width: 100%;
+}
+
+.size-selector__title {
+  font-family: 'open sans';
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0.2px;
+  line-height: 18px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+@media (min-width: 768px) {
+  .size-selector__title {
+    margin-bottom: 16px;
+    padding-top: 10px;
+  }
+}
+
+.size-selector__checkbox {
+  font-family: 'open sans';
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0.2px;
+  line-height: 18px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+@media (min-width: 768px) {
+  .size-selector__checkbox {
+    margin-bottom: 0px;
   }
 }
 
@@ -156,6 +345,13 @@ h1 {
   width: 93%;
 }
 
+@media (min-width: 768px) {
+  .hats__wrap {
+    padding-top: 10px;
+    padding-right: 6px;
+  }
+}
+
 .hats__content {
   background-color: white;
   padding: 5px;
@@ -167,6 +363,11 @@ h1 {
   .hats__content {
     padding: 15px;
   }
+}
+
+.hats__content:hover {
+  opacity: .7;
+  cursor: pointer;
 }
 
 .hats__button {
@@ -181,6 +382,7 @@ h1 {
   letter-spacing: 0.89px;
   text-align: center;
   margin-right: 12px;
+  margin-left: 10%;
 }
 
 .hats__button:active {
@@ -198,6 +400,7 @@ h1 {
   position: absolute;
   width: 93%;
   background-color: white;
+  min-width: 290px;
 }
 
 @media (min-width: 768px) {
@@ -214,9 +417,9 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 24px;
   padding-bottom: 20px;
 }
@@ -252,7 +455,7 @@ h1 {
 }
 
 .hats__image--1 {
-  background-image: url(../images/phillies/phillies1.png);
+  background-image: url(../images/phillies/phillies6.png);
 }
 
 .hats__image--2 {
@@ -272,7 +475,7 @@ h1 {
 }
 
 .hats__image--6 {
-  background-image: url(../images/phillies/phillies6.png);
+  background-image: url(../images/phillies/phillies1.png);
 }
 
 .hats__image--7 {
@@ -331,14 +534,6 @@ h1 {
   background-image: url(../images/phillies/phillies20.png);
 }
 
-.hats__image--1 {
-  background-image: url(../images/phillies/phillies1.png);
-}
-
-.hats__image--1 {
-  background-image: url(../images/phillies/phillies1.png);
-}
-
 .hats__title {
   font-family: 'open sans';
   font-size: 13px;
@@ -387,6 +582,7 @@ h1 {
   letter-spacing: 0;
   outline: none;
   border: none;
+  margin-right: 10%;
 }
 
 .show-all-btn:hover {
@@ -407,6 +603,10 @@ h1 {
   .column {
     width: 33.3%;
   }
+}
+
+.column a {
+  text-decoration: none;
 }
 
 /* Clear floats after hatss */
@@ -439,5 +639,9 @@ h1 {
 .btn.active {
   background-color: #666;
   color: white;
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=phillies.css.map */

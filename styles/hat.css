@@ -1,0 +1,268 @@
+body {
+  width: 100%;
+  margin-top: 113px;
+  background-color: #EEEEEE;
+  padding-top: 5px;
+}
+
+.hat {
+  width: 93%;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.hat__container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 1px;
+}
+
+@media (min-width: 768px) {
+  .hat__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 97%;
+  }
+}
+
+.hat__content-wrap {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .hat__content-wrap {
+    width: 50%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.hat__title-wrap {
+  width: 75%;
+}
+
+@media (min-width: 768px) {
+  .hat__title-wrap {
+    width: auto;
+  }
+}
+
+.hat__phillies-title {
+  font-family: 'open sans';
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0.44px;
+  line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .hat__phillies-title {
+    /* PHILADELPHIA PHILLIE: */
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+}
+
+.hat__59fifty-title {
+  font-family: 'open sans';
+  font-size: 28px;
+  color: #000000;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .hat__59fifty-title {
+    font-size: 36px;
+  }
+}
+
+.hat__price {
+  /* $34.99: */
+  font-family: 'open sans';
+  font-size: 28px;
+  color: #000000;
+  letter-spacing: 0.5px;
+}
+
+@media (min-width: 768px) {
+  .hat__price {
+    font-size: 36px;
+    letter-spacing: 0.94px;
+  }
+}
+
+.hat__images-wrap-sm {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .hat__images-wrap-sm {
+    display: none;
+  }
+}
+
+.hat__images-wrap {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hat__images-wrap {
+    display: block;
+    width: 50%;
+  }
+}
+
+.hat__product-main {
+  background-image: url(../images/phillies/phillies6.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 230px;
+  width: 250px;
+  margin-top: 17px;
+  background-position: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .hat__product-main {
+    margin-top: 30px;
+    margin: 0 auto;
+    width: 90%;
+    height: 300px;
+  }
+}
+
+.hat__img-link-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.hat__image-link {
+  width: 33.3333%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  margin-bottom: 20px;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .hat__image-link {
+    height: 61px;
+  }
+}
+
+.hat__image-link--1 {
+  background-image: url("../images/product/hat1.png");
+}
+
+.hat__image-link--2 {
+  background-image: url("../images/product/hat3.png");
+}
+
+.hat__image-link--3 {
+  background-image: url("../images/product/hat4.png");
+}
+
+.hat__image-link--4 {
+  background-image: url("../images/product/hat2.png");
+}
+
+.hat__image-link--5 {
+  background-image: url("../images/product/hat3.png");
+}
+
+.hat__image-link--6 {
+  background-image: url("../images/product/hat4.png");
+}
+
+.selector {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.selector__size {
+  width: 230px;
+  text-align-last: center;
+}
+
+.selector__button-wrap {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .selector__button-wrap {
+    padding-top: 63px;
+    text-align: left;
+  }
+}
+
+.selector__button {
+  background-color: black;
+  font-family: 'open sans';
+  font-size: 18px;
+  color: #FFFFFF;
+  letter-spacing: 0.89px;
+  text-align: center;
+  outline: none;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  width: 65%;
+}
+
+@media (min-width: 768px) {
+  .selector__button {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    width: 55%;
+  }
+}
+
+.selector__button:hover {
+  cursor: pointer;
+  opacity: .9;
+}
+
+.content {
+  padding-top: 20px;
+  padding-bottom: 2px;
+}
+
+.content__para {
+  font-family: 'open sans';
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+}
+
+.content__details {
+  font-family: 'open sans';
+  font-size: 14px;
+  color: #999999;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+}
+/*# sourceMappingURL=hat.css.map */

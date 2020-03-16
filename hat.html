@@ -4,7 +4,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
     <link href="styles/style.css" rel="stylesheet">
-    <link href="styles/phillies.css" rel="stylesheet">
+    <!-- <link href="styles/phillies.css" rel="stylesheet"> -->
+    <link href="styles/hat.css" rel="stylesheet">
     <title>New Era</title>
 </head>
 <title>New Era Website</title>
@@ -437,332 +438,67 @@
 
 
 
-    <div class="phillies-filter">
-        <h2 class="phillies-filter__title">PHILADELPHIA PHILLIES</h2>
 
 
-        <div class="filter-hat-wrap">
-            <div class="filter">
-
-                <h3 class="filter__title">FILTER BY</h3>
-                <div class="filter__h3-wrap type-onclick">
-                    <h4 class="filter__type-title">TYPE</h4>
-                    <div class="carrot__down carrot__down--type hidden"></div>
-                    <div class="carrot__up carrot__up--type"></div>
+    <div class="hat">
+        <div class="hat__container">
+            <div class="hat__images-wrap">
+                <div class="hat__product-main"></div>
+                <div class="hat__img-link-wrap">
+                    <div class="hat__image-link hat__image-link--1"></div>
+                    <div class="hat__image-link hat__image-link--2"></div>
+                    <div class="hat__image-link hat__image-link--3"></div>
+                    <div class="hat__image-link hat__image-link--4"></div>
+                    <div class="hat__image-link hat__image-link--5"></div>
+                    <div class="hat__image-link hat__image-link--6"></div>
                 </div>
-
-
-                <div class="filter__checkbox-wrap type">
-                    <input type="checkbox" class="filter__checkbox" name="all" value="All"
-                        onclick="filterSelection('all')">
-                    <label for="all" class="filter__label"> Show All</label><br>
-                    <input type="checkbox" class="filter__checkbox" name="fitted" value="Fitted"
-                        onclick="filterSelection('fitted')">
-                    <label for="fitted" class="filter__label"> Fitted</label><br>
-                    <input type="checkbox" class="filter__checkbox" name="stretch" value="Stretch"
-                        onclick="filterSelection('stretch')">
-                    <label for="stretch" class="filter__label" class="filter__label"> Stretch</label><br>
-                    <input type="checkbox" class="filter__checkbox" name="adjustable" value="Adjustable"
-                        onclick="filterSelection('adjustable')">
-                    <label for="adjustable" class="filter__label"> Adjustable</label><br>
-                    <input type="checkbox" class="filter__checkbox" name="knit" value="Knit"
-                        onclick="filterSelection('knit')">
-                    <label for="Knit" class="filter__label"> Knit</label><br>
-                </div>
-
-
-
-                <div class="filter__h3-wrap gender-onclick">
-                    <h4 class="gender-selector__title">GENDER</h4>
-                    <div class="carrot__down carrot__down--gender"></div>
-                    <div class="carrot__up carrot__up--gender hidden"></div>
-                </div>
-
-                <div class="gender-selector gender hidden">
-                    <input type="checkbox" class="gender-selector__checkbox" name="male" value="Male">
-                    <label for="Male" class="filter__label"> Male</label><br>
-                    <input type="checkbox" class="gender-selector__checkbox" name="female" value="Female">
-                    <label for="Female" class="filter__label"> Female</label><br>
-                    <input type="checkbox" class="gender-selector__checkbox" name="kids" value="Kids">
-                    <label for="Kids" class="filter__label"> Kids</label><br>
-                </div>
-
-                <div class="filter__h3-wrap size-onclick">
-                    <h4 class="size-selector__title">SIZE</h4>
-                    <div class="carrot__down carrot__down--size"></div>
-                    <div class="carrot__up carrot__up--size hidden"></div>
-                </div>
-
-                <div class="size-selector size hidden">
-                    <input type="checkbox" class="size-selector__checkbox" name="6 7/8" value="6 7/8">
-                    <label for="6 7/8" class="filter__label"> 6 7/8</label><br>
-                    <input type="checkbox" class="size-selector__checkbox" name="7" value="7">
-                    <label for="7" class="filter__label"> 7</label><br>
-                    <input type="checkbox" class="size-selector__checkbox" name="7 1/8" value="7 1/8">
-                    <label for="7 1/8" class="filter__label"> 7 1/8</label><br>
-                    <input type="checkbox" class="size-selector__checkbox" name="7 1/4" value="7 1/4">
-                    <label for="7 1/4" class="filter__label"> 7 1/4</label><br>
-                    <input type="checkbox" class="size-selector__checkbox" name="7 3/8" value="7 3/8">
-                    <label for="adjustable" class="filter__label"> 7 3/8</label><br>
-                    <input type="checkbox" class="size-selector__checkbox" name="7 3/8" value="7 3/8">
-                    <label for="7 3/8" class="filter__label"> 7 3/8</label><br>
-                </div>
-
             </div>
-            <!-- Portfolio Gallery Grid -->
-            <div class="hats">
-                <div class="hats__button-wrap" id="hats__button-wrap">
-
-                    <button class="hats__button btn">FILTER RESULTS</button>
-                    <div class="hidden hats__menu-wrap">
-                        <div class="filter__checkbox-wrap">
-
-                            <div class="filter__close">x</div>
-                            <div class="filter__h3-wrap type-onclick">
-                                <h4 class="filter__type-title">TYPE</h4>
-                                <div class="carrot__down carrot__down--type hidden"></div>
-                                <div class="carrot__up carrot__up--type "></div>
-                            </div>
-
-                            <div class="type">
-                                <input type="checkbox" class="filter__checkbox" name="all" value="All"
-                                    onclick="filterSelection('all')">
-                                <label for="all" class="filter__label"> Show All</label><br>
-                                <input type="checkbox" class="filter__checkbox" name="fitted" value="Fitted"
-                                    onclick="filterSelection('fitted')">
-                                <label for="fitted" class="filter__label"> Fitted</label><br>
-                                <input type="checkbox" class="filter__checkbox" name="stretch" value="Stretch"
-                                    onclick="filterSelection('stretch')">
-                                <label for="stretch" class="filter__label" class="filter__label"> Stretch</label><br>
-                                <input type="checkbox" class="filter__checkbox" name="adjustable" value="Adjustable"
-                                    onclick="filterSelection('adjustable')">
-                                <label for="adjustable" class="filter__label"> Adjustable</label><br>
-                                <input type="checkbox" class="filter__checkbox" name="knit" value="Knit"
-                                    onclick="filterSelection('knit')">
-                                <label for="Knit" class="filter__label"> Knit</label><br>
-                            </div>
-
-                            <div class="filter__h3-wrap gender-onclick">
-                                <h4 class="gender-selector__title">GENDER</h4>
-                                <div class="carrot__down carrot__down--gender"></div>
-                                <div class="carrot__up carrot__up--gender hidden"></div>
-                            </div>
-                            <div class="gender-selector gender hidden">
-                                <input type="checkbox" class="gender-selector__checkbox" name="male" value="Male">
-                                <label for="Male" class="filter__label"> Male</label><br>
-                                <input type="checkbox" class="gender-selector__checkbox" name="female" value="Female">
-                                <label for="Female" class="filter__label"> Female</label><br>
-                                <input type="checkbox" class="gender-selector__checkbox" name="kids" value="Kids">
-                                <label for="Kids" class="filter__label"> Kids</label><br>
-                            </div>
-
-                            <div class="filter__h3-wrap size-onclick">
-                                <h4 class="size-selector__title">SIZE</h4>
-                                <div class="carrot__down carrot__down--size"></div>
-                                <div class="carrot__up carrot__up--size hidden"></div>
-                            </div>
-
-
-
-                            <div class="size-selector size hidden">
-                                <input type="checkbox" class="size-selector__checkbox" name="6 7/8" value="6 7/8">
-                                <label for="6 7/8" class="filter__label"> 6 7/8</label><br>
-                                <input type="checkbox" class="size-selector__checkbox" name="7" value="7">
-                                <label for="7" class="filter__label"> 7</label><br>
-                                <input type="checkbox" class="size-selector__checkbox" name="7 1/8" value="7 1/8">
-                                <label for="7 1/8" class="filter__label"> 7 1/8</label><br>
-                                <input type="checkbox" class="size-selector__checkbox" name="7 1/4" value="7 1/4">
-                                <label for="7 1/4" class="filter__label"> 7 1/4</label><br>
-                                <input type="checkbox" class="size-selector__checkbox" name="7 3/8" value="7 3/8">
-                                <label for="adjustable" class="filter__label"> 7 3/8</label><br>
-                                <input type="checkbox" class="size-selector__checkbox" name="7 3/8" value="7 3/8">
-                                <label for="7 3/8" class="filter__label"> 7 3/8</label><br>
-                            </div>
-
-                        </div>
-                    </div>
-                    <button class="show-all-btn" onclick="filterSelection('all')"> Clear Search</button>
+            <div class="hat__content-wrap">
+                <div class="hat__title-wrap">
+                    <h4 class="hat__phillies-title">PHILADELPHIA PHILLIES</h4>
+                    <div class="hat__59fifty-title">MLB Authentic Collection 59FIFTY Low Profile Cap</div>
+                    <div class="hat__price"> $34.99</div>
                 </div>
-
-
-
-                <div class="hats__wrap">
-
-
-                    <div class="column fitted">
-                        <a href="hat.html">
-                            <div class="hats__content">
-                                <div class="hats__image hats__image--1"></div>
-                                <!-- <img src="images/phillies/phillies6.png" alt="Phillies Hat"> -->
-                                <h4 class="hats__title">PHILADELPHIA PHILLIES</h4>
-                                <p class="hats__description">MLB Pantone Collection<br> 59FIFTY Cap</p>
-                            </div>
-                        </a>
+                <div class="hat__images-wrap-sm">
+                    <div class="hat__product-main"></div>
+                    <div class="hat__img-link-wrap">
+                        <div class="hat__image-link hat__image-link--1"></div>
+                        <div class="hat__image-link hat__image-link--2"></div>
+                        <div class="hat__image-link hat__image-link--3"></div>
+                        <div class="hat__image-link hat__image-link--4"></div>
+                        <div class="hat__image-link hat__image-link--5"></div>
+                        <div class="hat__image-link hat__image-link--6"></div>
                     </div>
-                    
-                    <div class="column adjustable">
-                        <div class="hats__content">
-                            <div class="hats__image hats__image--2"></div>
-                            <!-- <img src="images/phillies/phillies2.png" alt="Phillies Hat"> -->
-                            <h4 class="hats__title">PHILADELPHIA PHILLIES</h4>
-                            <p class="hats__description">MLB Pantone Collection<br> 59FIFTY Cap</p>
-                        </div>
-                    </div>
-                    <div class="column fitted">
-                        <div class="hats__content">
-                            <div class="hats__image hats__image--3"></div>
-                            <!-- <img src="images/phillies/phillies3.png" alt="Phillies Hat"> -->
-                            <h4 class="hats__title">PHILADELPHIA PHILLIES</h4>
-                            <p class="hats__description">MLB Pantone Collection<br> 59FIFTY Cap</p>
-                        </div>
-                    </div>
-
-                    <div class="column knit">
-                        <div class="hats__content">
-                            <div class="hats__image hats__image--4"></div>
-                            <!-- <img src="images/phillies/phillies4.png" alt="Phillies Hat"> -->
-                            <h4 class="hats__title">PHILADELPHIA PHILLIES</h4>
-                            <p class="hats__description">MLB Pantone Collection<br> 59FIFTY Cap</p>
-                        </div>
-                    </div>
-                    <div class="column stretch">
-                        <div class="hats__content">
-                            <div class="hats__image hats__image--5"></div>
-                            <!-- <img src="images/phillies/phillies5.png" alt="Phillies Hat"> -->
-                            <h4 class="hats__title">PHILADELPHIA PHILLIES</h4>
-                            <p class="hats__description">MLB Pantone Collection<br> 59FIFTY Cap</p>
-                        </div>
-                    </div>
-                    
-                    <div class="column fitted">
-                        <div class="hats__content">
-                            <div class="hats__image hats__image--6"></div>
-                            <!-- <img src="images/phillies/phillies1.png" alt="Phillies Hat"> -->
-                            <h4 class="hats__title">PHILADELPHIA PHILLIES</h4>
-                            <p class="hats__description">MLB Pantone Collection<br> 59FIFTY Cap</p>
-                        </div>
-                    </div>
-
-                    <div class="column fitted">
-                        <div class="hats__content">
-                            <div class="hats__image hats__image--7"></div>
-                            <!-- <img src="images/phillies/phillies7.png" alt="Phillies Hat"> -->
-                            <h4 class="hats__title">PHILADELPHIA PHILLIES</h4>
-                            <p class="hats__description">MLB Pantone Collection<br> 59FIFTY Cap</p>
-                        </div>
-                    </div>
-                    <div class="column fitted">
-                        <div class="hats__content">
-                            <div class="hats__image hats__image--8"></div>
-                            <!-- <img src="images/phillies/phillies8.png" alt="Phillies Hat"> -->
-                            <h4 class="hats__title">PHILADELPHIA PHILLIES</h4>
-                            <p class="hats__description">MLB Pantone Collection<br> 59FIFTY Cap</p>
-                        </div>
-                    </div>
-                    <div class="column adjustable">
-                        <div class="hats__content">
-                            <div class="hats__image hats__image--9"></div>
-                            <!-- <img src="images/phillies/phillies9.png" alt="Phillies Hat"> -->
-                            <h4 class="hats__title">PHILADELPHIA PHILLIES</h4>
-                            <p class="hats__description">MLB Pantone Collection<br> 59FIFTY Cap</p>
-                        </div>
-                    </div>
-                    <div class="column knit">
-                        <div class="hats__content">
-                            <div class="hats__image hats__image--10"></div>
-                            <!-- <img src="images/phillies/phillies10.png" alt="Phillies Hat"> -->
-                            <h4 class="hats__title">PHILADELPHIA PHILLIES</h4>
-                            <p class="hats__description">MLB Pantone Collection<br> 59FIFTY Cap</p>
-                        </div>
-                    </div>
-                    <div class="column stretch">
-                        <div class="hats__content">
-                            <div class="hats__image hats__image--11"></div>
-                            <!-- <img src="images/phillies/phillies11.png" alt="Phillies Hat"> -->
-                            <h4 class="hats__title">PHILADELPHIA PHILLIES</h4>
-                            <p class="hats__description">MLB Pantone Collection<br> 59FIFTY Cap</p>
-                        </div>
-                    </div>
-                    <div class="column fitted">
-                        <div class="hats__content">
-                            <div class="hats__image hats__image--12"></div>
-                            <!-- <img src="images/phillies/phillies12.png" alt="Phillies Hat"> -->
-                            <h4 class="hats__title">PHILADELPHIA PHILLIES</h4>
-                            <p class="hats__description">MLB Pantone Collection<br> 59FIFTY Cap</p>
-                        </div>
-                    </div>
-
-                    <div class="column fitted">
-                        <div class="hats__content">
-                            <div class="hats__image hats__image--13"></div>
-                            <!-- <img src="images/phillies/phillies13.png" alt="Phillies Hat"> -->
-                            <h4 class="hats__title">PHILADELPHIA PHILLIES</h4>
-                            <p class="hats__description">MLB Pantone Collection<br> 59FIFTY Cap</p>
-                        </div>
-                    </div>
-                    <div class="column fitted">
-                        <div class="hats__content">
-                            <div class="hats__image hats__image--14"></div>
-                            <!-- <img src="images/phillies/phillies14.png" alt="Phillies Hat"> -->
-                            <h4 class="hats__title">PHILADELPHIA PHILLIES</h4>
-                            <p class="hats__description">MLB Pantone Collection<br> 59FIFTY Cap</p>
-                        </div>
-                    </div>
-                    <div class="column adjustable">
-                        <div class="hats__content">
-                            <div class="hats__image hats__image--15"></div>
-                            <!-- <img src="images/phillies/phillies15.png" alt="Phillies Hat"> -->
-                            <h4 class="hats__title">PHILADELPHIA PHILLIES</h4>
-                            <p class="hats__description">MLB Pantone Collection<br> 59FIFTY Cap</p>
-                        </div>
-                    </div>
-
-                    <div class="column knit">
-                        <div class="hats__content">
-                            <div class="hats__image hats__image--16"></div>
-                            <!-- <img src="images/phillies/phillies16.png" alt="Phillies Hat"> -->
-                            <h4 class="hats__title">PHILADELPHIA PHILLIES</h4>
-                            <p class="hats__description">MLB Pantone Collection<br> 59FIFTY Cap</p>
-                        </div>
-                    </div>
-                    <div class="column stretch">
-                        <div class="hats__content">
-                            <div class="hats__image hats__image--17"></div>
-                            <!-- <img src="images/phillies/phillies17.png" alt="Phillies Hat"> -->
-                            <h4 class="hats__title">PHILADELPHIA PHILLIES</h4>
-                            <p class="hats__description">MLB Pantone Collection<br> 59FIFTY Cap</p>
-                        </div>
-                    </div>
-                    <div class="column fitted">
-                        <div class="hats__content">
-                            <div class="hats__image hats__image--18"></div>
-                            <!-- <img src="images/phillies/phillies18.png" alt="Phillies Hat"> -->
-                            <h4 class="hats__title">PHILADELPHIA PHILLIES</h4>
-                            <p class="hats__description">MLB Pantone Collection<br> 59FIFTY Cap</p>
-                        </div>
-                    </div>
-                    <div class="column fitted">
-                        <div class="hats__content">
-                            <div class="hats__image hats__image--19"></div>
-                            <!-- <img src="images/phillies/phillies19.png" alt="Phillies Hat"> -->
-                            <h4 class="hats__title">PHILADELPHIA PHILLIES</h4>
-                            <p class="hats__description">MLB Pantone Collection<br> 59FIFTY Cap</p>
-                        </div>
-                    </div>
-                    <div class="column fitted">
-                        <div class="hats__content">
-                            <div class="hats__image hats__image--20"></div>
-                            <!-- <img src="images/phillies/phillies20.png" alt="Phillies Hat" > -->
-                            <h4 class="hats__title">PHILADELPHIA PHILLIES</h4>
-                            <p class="hats__description">MLB Pantone Collection<br> 59FIFTY Cap</p>
-                        </div>
-                    </div>
-
                 </div>
-                <!-- END GRID -->
+                <div class="selector">
+                    <select class="selector__size">
+                        <option selected disabled>SELECT A SIZE</option>
+                        <option class="selector__item" value="6 7/8">6 7/8</option>
+                        <option class="selector__item" value="7">7</option>
+                        <option class="selector__item" value="7 1/8">7 1/8</option>
+                        <option class="selector__item" value="7 1/4">7 1/4</option>
+                        <option class="selector__item" value="7 3/8">7 3/8</option>
+                    </select>
+                </div>
+                <div class="selector__button-wrap">
+                    <button class="selector__button">ADD TO CART</button>
+                </div>
+                <div class="content">
+                    <p class="content__para">Celebrate the Philadelphia Phillies, and the rich history of the organization, with the Phillies red.  Whether shouting from the stands or rooting from afar, no one can doubt your allegiance. Your support counts when you wear the Philadelphia Phillies MLB Authentic Collection 59FIFTY Cap.  The essential cap draws attention and demands respect for your favorite professional baseball team, with expertly embroidered logo in bold team colors. </p>
+                    <p class="content__details">Made of 100% Polyester Woven<br>Article # 20923236 | Color: Red</p>
+                </div>
             </div>
+
         </div>
+
     </div>
+
+
+
+
+
+
+
 
 
 
