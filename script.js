@@ -236,15 +236,16 @@ function removeClass(element, name) {
 }
 
 // Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("hats__button-wrap");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+
+// var btnContainer = document.getElementById("hats__button-wrap");
+// var btns = btnContainer.getElementsByClassName("btn");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function(){
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }
 
 
 
@@ -303,3 +304,76 @@ $(".size-onclick").click(function () {
 //     $("#carrot__down--type").addClass("hidden");
 //   }
 // });
+
+
+
+
+
+
+
+// INDIVIDUAL HAT PAGE 
+
+// HAT IMAGE GALLERY
+
+
+// onClick change hat image
+
+// $(".hat__image-link--1").click(function () {
+//     var imageUrl1 = "../images/product/hat1.png"; 
+//     $(".hat__product-main").css("background-image", "url(" + imageUrl1 + ")"); 
+// });
+
+// $(".hat__image-link--2").click(function () {
+//   var imageUrl2 = "../images/product/hat2.png"; 
+//   $(".hat__product-main").css("background-image", "url(" + imageUrl2 + ")"); 
+// });
+ 
+
+// $(".dropdown__link--sports").click(function () {
+//   $("#sports-nav").removeClass("hidden");
+// });
+
+
+
+  // $(".hat__image-link--2").click(function() { 
+  //     var imageUrl = "../images/product/hat3.png"; 
+  //     $(".hat__product-main").css("background-image", "url(" + imageUrl + ")"); 
+  // }); 
+
+  var imageUrl1 = "./images/product/hat1.png"; 
+  var imageUrl2 = "./images/product/hat3.png"; 
+  var imageUrl4 = "./images/product/hat2.png"; 
+  var imageUrl3 = "./images/product/hat4.png"; 
+
+$(".hat__image-link--1").click(function () {
+  $(".hat__product-main").css("background-image", "url(" + imageUrl1 + ")");
+});
+$(".hat__image-link--2").click(function () {
+  $(".hat__product-main").css("background-image", "url(" + imageUrl2 + ")");
+});
+$(".hat__image-link--3").click(function () {
+  $(".hat__product-main").css("background-image", "url(" + imageUrl3 + ")");
+});
+$(".hat__image-link--4").click(function () {
+  $(".hat__product-main").css("background-image", "url(" + imageUrl1 + ")");
+  $(".hat__product-main").css("transform:", "scaleX(-1)");
+});
+$(".hat__image-link--5").click(function () {
+  $(".hat__product-main").css("background-image", "url(" + imageUrl2 + ")");
+});
+$(".hat__image-link--6").click(function () {
+  $(".hat__product-main").css("background-image", "url(" + imageUrl3 + ")");
+});
+
+// opacity background on hat images
+$('.hat__image-link').click(function() {
+  $(this).addClass('opacity').siblings().removeClass('opacity');
+});
+
+
+
+// opacity on size LI 
+
+$('.selector-lg__size').click(function() {
+  $(this).addClass('opacity').siblings().removeClass('opacity');
+});
