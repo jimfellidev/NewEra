@@ -126,20 +126,19 @@ body {
 }
 
 .hat__product-main {
-  background-image: url(../images/product/hat1.png);
+  background-image: url(../images/product/hat1-new.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   height: 230px;
-  width: 250px;
-  margin-top: 17px;
+  width: 100%;
   background-position: center;
-  margin: 0 auto;
+  margin-top: 27px;
 }
 
 @media (min-width: 768px) {
   .hat__product-main {
-    margin-top: 30px;
     margin: 0 auto;
+    margin-top: 30px;
     width: 100%;
     height: 280px;
   }
@@ -157,12 +156,14 @@ body {
   flex-direction: row;
   margin: 0 auto;
   width: 90%;
+  margin-top: 32px;
 }
 
 @media (min-width: 768px) {
   .hat__img-link-wrap {
     padding-top: 50px;
     width: 100%;
+    margin-top: auto;
   }
 }
 
@@ -190,7 +191,7 @@ body {
 }
 
 .hat__image-link--2 {
-  background-image: url("../images/product/hat3.png");
+  background-image: url("../images/product/hatsm3.png");
 }
 
 .hat__image-link--3 {
@@ -202,7 +203,7 @@ body {
 }
 
 .hat__image-link--5 {
-  background-image: url("../images/product/hat3.png");
+  background-image: url("../images/product/hatsm3.png");
 }
 
 .hat__image-link--6 {

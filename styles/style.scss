@@ -743,12 +743,13 @@ body {
         }
     }
     &__image {
-        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../images/baseball.png);
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/test.jpg);
         // height: 280px;
         background-position: initial;
         background-repeat: no-repeat;
         background-size: cover;
         border: 1px solid #979797;
+        
         @media (min-width: $breakpoint-tablet) {
             height: 460px;
         }
@@ -757,7 +758,7 @@ body {
         text-align: center;
         @media (min-width: $breakpoint-tablet) {
             padding-top: 70px;
-            width: 81%;
+            width: 83%;
             position: relative;
             padding-left: 22px;
             text-align: start;

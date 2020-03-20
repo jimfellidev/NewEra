@@ -340,35 +340,55 @@ $(".size-onclick").click(function () {
   //     $(".hat__product-main").css("background-image", "url(" + imageUrl + ")"); 
   // }); 
 
-  var imageUrl1 = "./images/product/hat1.png"; 
+  var imageUrl1 = "./images/product/hat1-new.jpg"; 
   var imageUrl2 = "./images/product/hat3.png"; 
   var imageUrl4 = "./images/product/hat2.png"; 
-  var imageUrl3 = "./images/product/hat4.png"; 
+  var imageUrl3 = "./images/product/hat4-new.png"; 
 
 $(".hat__image-link--1").click(function () {
   $(".hat__product-main").css("background-image", "url(" + imageUrl1 + ")");
+  // $(".hat__product-main").css("background-size", "cover");
 });
+
 $(".hat__image-link--2").click(function () {
   $(".hat__product-main").css("background-image", "url(" + imageUrl2 + ")");
+  // $(".hat__product-main").css("background-size", "contain");
 });
+
 $(".hat__image-link--3").click(function () {
   $(".hat__product-main").css("background-image", "url(" + imageUrl3 + ")");
+  // $(".hat__product-main").css("background-size", "contain");
 });
 $(".hat__image-link--4").click(function () {
   $(".hat__product-main").css("background-image", "url(" + imageUrl1 + ")");
-  $(".hat__product-main").css("transform:", "scaleX(-1)");
+  // $(".hat__product-main").css("transform:", "scaleX(-1)");
+  // $(".hat__product-main").css("background-size", "cover");
+
 });
 $(".hat__image-link--5").click(function () {
   $(".hat__product-main").css("background-image", "url(" + imageUrl2 + ")");
+  // $(".hat__product-main").css("background-size", "contain");
 });
 $(".hat__image-link--6").click(function () {
   $(".hat__product-main").css("background-image", "url(" + imageUrl3 + ")");
+  // $(".hat__product-main").css("background-size", "contain");
 });
 
-// opacity background on hat images
+
+
+
+// testing alternate ways to scroll through hats
+
+// $('.hat__image-link--1').click(function() {
+//     $(".hat__product-main").addClass('.hat__image-link--1');
+// });
+
+
+// hat opacity
 $('.hat__image-link').click(function() {
   $(this).addClass('opacity').siblings().removeClass('opacity');
 });
+
 
 
 
@@ -377,3 +397,4 @@ $('.hat__image-link').click(function() {
 $('.selector-lg__size').click(function() {
   $(this).addClass('opacity').siblings().removeClass('opacity');
 });
+
