@@ -54,6 +54,11 @@ body {
   text-align: center;
 }
 
+.nav__item:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
 @media (min-width: 768px) {
   .nav__item {
     padding-top: 21px;
@@ -1254,6 +1259,11 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0 6%;
+}
+
+.footer__logo:hover {
+  cursor: pointer;
+  opacity: .7;
 }
 
 @media (min-width: 768px) {

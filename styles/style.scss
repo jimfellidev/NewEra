@@ -52,13 +52,16 @@ body {
         display: block;
         height: 100%;
         text-align: center;
+        &:hover {
+            cursor: pointer;
+            opacity: .7;
+        }
+        
         @media (min-width: $breakpoint-tablet) {
             padding-top: 21px;
             // width: 20%;
             margin: 0 auto;
             font-family: 'Open Sans';
-
-
             font-size: 16px;
             color: #000000;
             letter-spacing: 1px;
@@ -1108,6 +1111,10 @@ body {
         background-repeat: no-repeat;
         background-size: contain;
         margin: 0 6%;
+        &:hover {
+            cursor: pointer;
+            opacity: .7;
+        }
         @media (min-width: $breakpoint-tablet) {
             margin: 0 10px;
         } 
