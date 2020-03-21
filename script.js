@@ -201,10 +201,9 @@ $(".filter__close").click(function () {
 
 
 
-
+var $gallery = $(".type");
+$inputs = $gallery.find("input");
 $(function() {
-  var $gallery = $(".type");
-  $inputs = $gallery.find("input");
   // $inputs.attr("checked", "checked");
   $inputs.on("change", function() {
     $inputs.each(function(i, cb) {
@@ -217,16 +216,23 @@ $(function() {
 });
 
 
+$(".show-all-btn").click(function () {
+  $('input[type=checkbox]').prop('checked',false);
+  $(".all").css("display", "inline");
+});
 
 
-// ADJUST SHOW ALL BUTTONS
+
+
+// to top arrow is showing through searchbox when 
+// - Remove show all filter and replace with clear search button
 
 
 
 // hat filter
 // Execute the function and show all columns
 
-// xx filterSelection("all") 
+// filterSelection("all") 
 // function filterSelection(c) {
 //   var x, i;
 //   x = document.getElementsByClassName("column");
@@ -234,7 +240,7 @@ $(function() {
 
   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
 
-//   xx for (i = 0; i < x.length; i++) {
+//   for (i = 0; i < x.length; i++) {
 //     removeClass(x[i], "show");
 //     if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
 //   }
@@ -242,7 +248,7 @@ $(function() {
 
 // Show filtered elements
 
-// xx function addClass(element, name) {
+// function addClass(element, name) {
 //   var i, arr1, arr2;
 //   arr1 = element.className.split(" ");
 //   arr2 = name.split(" ");
@@ -255,7 +261,7 @@ $(function() {
 
 // Hide elements that are not selected
 
-// xx function removeClass(element, name) {
+// function removeClass(element, name) {
 //   var i, arr1, arr2;
 //   arr1 = element.className.split(" ");
 //   arr2 = name.split(" ");
@@ -266,6 +272,10 @@ $(function() {
 //   }
 //   element.className = arr1.join(" ");
 // }
+
+
+
+
 
 // Add active class to the current button (highlight it)
 
