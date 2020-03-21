@@ -595,8 +595,6 @@ h1 {
 .column {
   float: left;
   width: 50%;
-  display: none;
-  /* Hide columns by default */
 }
 
 @media (min-width: 768px) {
