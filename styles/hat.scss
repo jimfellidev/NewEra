@@ -244,7 +244,6 @@ body {
         flex-wrap: wrap;
     }
     &__size {
-        // height: 45px;
         width: 16%;
         font-family: 'open sans';
         font-size: 16px;
@@ -310,4 +309,9 @@ body {
 
 .opacity {
     opacity: .7;
+}
+
+
+.red {
+    color: red;
 }

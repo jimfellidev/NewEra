@@ -27,8 +27,6 @@ body {
         &-content {
             text-transform: uppercase;
             width: 216px;
-            height: 32px;
-            // font-family: .AppleSystemUIFont;
             font-size: 14px;
             color: #666666;
             letter-spacing: 1px;
@@ -43,7 +41,7 @@ body {
         }
     }
     &__bottom {
-        height: 61px;
+        // height: 61px;
         background-color: white;
         border-bottom: 1px solid #979797;
     }
@@ -52,21 +50,18 @@ body {
         display: block;
         height: 100%;
         text-align: center;
+        margin: auto auto;
         &:hover {
             cursor: pointer;
             opacity: .7;
         }
         
         @media (min-width: $breakpoint-tablet) {
-            padding-top: 21px;
-            // width: 20%;
-            margin: 0 auto;
+            margin: auto auto;
             font-family: 'Open Sans';
             font-size: 16px;
             color: #000000;
             letter-spacing: 1px;
-            // line-height: 52px;
-            // font-family: 'Raleway';
             &:hover {
                 cursor: pointer;
                 opacity: .7;
@@ -74,10 +69,8 @@ body {
         }
             &--logo {
                 width: 50%;
-                /* margin-left: 10px; */
-                padding-top: 10px;
+
                 @media (min-width: $breakpoint-tablet) {
-                    padding-top: 9px;
                     width: 9%;
                     text-align: left;
                     margin-left: 0;
@@ -85,32 +78,27 @@ body {
             }
             &--hamburger {
                 width: 25%;
-                // margin-left: -10px;
 
             }
             &--search {
                 width: 10%;
-                /* padding-left: 5%; */
-                padding-top: 16px;
                 @media (min-width: $breakpoint-tablet) {
                     width: 3%;
                     position: relative;
-                    padding-top: 18px;
                 }
             }
             &--shop {
                 width: 10%;
-                padding-top: 16px;
                 @media (min-width: $breakpoint-tablet) {
                     width: 4%;
                     position: relative;
                     margin-left: 6px;
                     margin-right: 0;
-                    padding-top: 18px;
                 }
             }
 
         &-wrap {
+            padding: .5px 0;
             list-style-type: none;
             width: 100%;
             height: 100%;
@@ -125,6 +113,7 @@ body {
             &-lg {
                 display: none;
                 @media (min-width: $breakpoint-tablet) {
+                    padding: 8px 0;
                     margin: 0 auto;
                     list-style-type: none;
                     width: 91%;
@@ -227,7 +216,6 @@ body {
         margin-top: 0;
     }
     &__link {
-        // font-family: .AppleSystemUIFont;
         padding-left: 19px;
         font-size: 18px;
         color: #000000;
@@ -272,7 +260,6 @@ body {
      display: flex;
      flex-direction: row;
      justify-content: space-between;
-    //  width: 97%;
     height: auto;
      overflow-y: none;
     }
@@ -295,7 +282,6 @@ body {
            }
     }
     &__link {
-        // font-family: .AppleSystemUIFont;
         padding-left: 19px;
         font-size: 18px;
         color: #000000;
@@ -330,7 +316,6 @@ body {
         &-center {
             width: 100%;
             margin-left: -83px;
-            // font-family: .SFNSDisplay-Regular;
             font-size: 20px;
             color: #000000;
             letter-spacing: 1.11px;
@@ -370,7 +355,6 @@ body {
             &-wrap {
                 float: left;
                 width: 84px;
-                // font-family: .AppleSystemUIFont;
                 font-size: 16px;
                 color: #000000;
                 letter-spacing: 0.89px;
@@ -396,7 +380,7 @@ body {
     height: 520px;
     z-index: 8;
     top: 1;
-    top: 120px;
+    top: 113px;
     position: absolute;
     background-color: white;
     overflow-y: scroll;
@@ -428,15 +412,11 @@ body {
             @media (min-width: $breakpoint-tablet) {
                 padding-top: 26px;
                }
-            // padding-top: 39px !important;
             
            }
-        //    &-non-title {
-        //     padding-top: 27px;
-        // }
+
     }
     &__link {
-        // font-family: .AppleSystemUIFont;
         padding-left: 19px;
         font-size: 18px;
         color: #000000;
@@ -444,7 +424,6 @@ body {
         line-height: 52px;
         font-family: 'Raleway';
         @media (min-width: $breakpoint-tablet) {
-            // font-family: .AppleSystemUIFont;
             width: 190px;
             font-size: 11px;
             color: #666666;
@@ -482,18 +461,17 @@ body {
         display: inline-block;
         width: 100%;
         padding-left: 0;
-        /* MLB Copy: */
         @media (min-width: $breakpoint-tablet) {
-        font-size: 36px;
-        color: #000000;
-        letter-spacing: 0.83px;
-        text-align: left;
-        line-height: 27px;
+            font-size: 36px;
+            color: #000000;
+            letter-spacing: 0.83px;
+            text-align: left;
+            line-height: 27px;
         }
         &-center {
             width: 100%;
             margin-left: -83px;
-            // font-family: .SFNSDisplay-Regular;
+
             font-size: 20px;
             color: #000000;
             letter-spacing: 1.11px;
@@ -711,30 +689,62 @@ body {
 }
 
 
+// .b-spot {
+//     position: relative;
+//     min-width: 320px;
+//     width: 100%;
+//     background-color: #EEEEEE;
+//     padding-top: 19px;
+//     padding-bottom: 32px;
+//     @media (min-width: $breakpoint-tablet) {
+//         z-index: 3;
+//         margin-top: 63px;
+//         display: flex;
+//         flex-direction: row;
+//         width: 91%;
+//         margin: 0 auto;
+//         padding-top: 0;
+//     }
+//     &__wrap {    
+//         margin-top: -63px;
+//         @media (min-width: $breakpoint-tablet) {
+//             margin-top: 0;
+//             padding-top: 19px;
+//             background-color: #EEEEEE;
+//         }
+//     }
+
+
+
+
 .b-spot {
-    position: relative;
-    min-width: 320px;
-    width: 100%;
-    background-color: #EEEEEE;
-    padding-top: 19px;
-    padding-bottom: 32px;
-    @media (min-width: $breakpoint-tablet) {
-        z-index: 3;
-        margin-top: 63px;
-        display: flex;
-        flex-direction: row;
-        width: 91%;
-        margin: 0 auto;
-        padding-top: 0;
-    }
-    &__wrap {    
         margin-top: -63px;
         @media (min-width: $breakpoint-tablet) {
             margin-top: 0;
             padding-top: 19px;
             background-color: #EEEEEE;
         }
+    &__wrap {
+        position: relative;
+        min-width: 320px;
+        width: 100%;
+        background-color: #EEEEEE;
+        padding-top: 19px;
+        padding-bottom: 32px;
+        @media (min-width: $breakpoint-tablet) {
+            z-index: 3;
+            margin-top: 63px;
+            display: flex;
+            flex-direction: row;
+            width: 91%;
+            margin: 0 auto;
+            padding-top: 0;
+        }
     }
+
+
+
+
 
         // margin-top: -16px;
     &__image-wrap {
@@ -882,48 +892,28 @@ body {
         }
     }
     &__item {
-        &-1 {
-            width: 40%;
-            text-align: center;
-            @media (min-width: $breakpoint-tablet) {
-                width: auto;
-            }
+        width: 40%;
+        text-align: center;
+        @media (min-width: $breakpoint-tablet) {
+            width: auto;
         }
-        &-2 {
-            width: 40%;
-            text-align: center;
-            @media (min-width: $breakpoint-tablet) {
-                width: auto;
-            } 
-        }
+
     }
     &__image {
-        &-1 {
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 82px;
+        width: 110px;
+        position: relative;
+        margin: 0 auto;
+        @media (min-width: $breakpoint-tablet) {
+            background-size: auto;
+        } 
+        &--1 {
             background-image: url(../images/cubs-hat.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            // width: 100%;
-            height: 82px;
-            width: 110px;
-            position: relative;
-            margin: 0 auto;
-            @media (min-width: $breakpoint-tablet) {
-                background-size: auto;
-            } 
-
         }
-        &-2 {
+        &--2 {
             background-image: url(../images/cubs-hat2.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            // width: 100%;
-            height: 82px;
-            width: 110px;
-            position: relative;
-            margin: 0 auto;
-            @media (min-width: $breakpoint-tablet) {
-                background-size: auto;
-            } 
         }
     }
     &__content {
@@ -1048,10 +1038,14 @@ body {
     width: 100%;
     height: 70px;
     background-color: #EEEEEE;
-    & a {
-        color: #000000;
-        text-decoration: none;
-    }
+    // &:hover {
+    //     opacity: .8;
+    //     cursor: pointer;
+    // }
+    // & a {
+    //     color: #000000;
+    //     text-decoration: none;
+    // }
     &__link {
         // font-family: .AppleSystemUIFont;
         font-size: 14px;
@@ -1061,17 +1055,39 @@ body {
         text-align: center;
         font-family: 'open sans';
         padding-top: 10px;
-        &:before {
-            margin-top: 23px;
-            margin-left: -18px;
-            content: '';
-            position: absolute;
-            height: 7px;
-            width: 7px;
-            border: 1.5px #000000;
-            border-style: none none solid solid;
-            -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
+        // &:before {
+        //     margin-top: 23px;
+        //     margin-left: -18px;
+        //     content: '';
+        //     position: absolute;
+        //     height: 7px;
+        //     width: 7px;
+        //     border: 1.5px #000000;
+        //     border-style: none none solid solid;
+        //     -webkit-transform: rotate(135deg);
+        //     transform: rotate(135deg);
+        // }
+        // &:hover:before {
+        //     opacity: .8;
+        //     cursor: pointer;   
+        // }
+        & a {
+            &:before {
+                margin-top: 23px;
+                margin-left: -18px;
+                content: '';
+                position: absolute;
+                height: 7px;
+                width: 7px;
+                border: 1.5px #000000;
+                border-style: none none solid solid;
+                -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+            }
+            &:hover {
+                opacity: .8;
+                cursor: pointer;
+            }
         }
     }
 }
@@ -1333,7 +1349,6 @@ body {
         }
     }
 }
-
 
 
 

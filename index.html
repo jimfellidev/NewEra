@@ -36,12 +36,12 @@
                 </button>
 
                </li>
-               <li class="nav__item nav__item--logo"><a href="#"><img class="nav__img-logo" src="images/NewEra-logo.png" alt="New Era Logo"></a></li>
+               <li class="nav__item nav__item--logo"><a href="index.html"><img class="nav__img-logo" src="images/NewEra-logo.png" alt="New Era Logo"></a></li>
                <li class="nav__item nav__item--search"><img class="nav__img-search" src="images/search.png" alt="search icon"></li>
                <li class="nav__item nav__item--shop"><i class='fas fa-cart-plus nav__img-shop' style='font-size:22px' SameSite=None Secure></i></li>
            </ul> 
            <ul class="nav__item-wrap-lg">
-            <li class="nav__item nav__item--logo"><a href="#"><img class="nav__img-logo" src="images/NewEra-logo.png" alt="New Era Logo"></a></li>
+            <li class="nav__item nav__item--logo"><a href="index.html"><img class="nav__img-logo" src="images/NewEra-logo.png" alt="New Era Logo"></a></li>
             <li class="nav__item nav__item--sports">SPORTS</li>
             <li class="nav__item">LIFESTYLE</li>
             <li class="nav__item">WOMEN</li>
@@ -52,7 +52,10 @@
             <li class="nav__item nav__item--shop"><i class='fas fa-cart-plus nav__img-shop' style='font-size:22px' SameSite=None Secure></i></li>
            </ul>
         </div>
-        <div id="dropdown" class="dropdown hidden">
+
+
+    <div  class="hidden menu">
+        <div id="dropdown" class="dropdown">
             <ul class="dropdown__ul">
               <li class="dropdown__link dropdown__link--sports">SPORTS
                   <i class="dropdown__arrow"></i>
@@ -245,10 +248,10 @@
                 </li>
             </ul>
             <ul class="mlb-nav__ul mlb-nav__ul-end mlb-nav__ul-non-title hidden">
-                <li class="mlb-nav__link mlb-nav__link--small">All MLB</li>
-                <li class="mlb-nav__link mlb-nav__link--small">MLB On-Field Headwear</li>
-                <li class="mlb-nav__link mlb-nav__link--small">New Releases</li>
-                <li class="mlb-nav__link mlb-nav__link--small">Trending</li>
+                <li class="mlb-nav__link mlb-nav__link--small sports-nav__link--nolink do-nothing">All MLB</li>
+                <li class="mlb-nav__link mlb-nav__link--small do-nothing">MLB On-Field Headwear</li>
+                <li class="mlb-nav__link mlb-nav__link--small do-nothing">New Releases</li>
+                <li class="mlb-nav__link mlb-nav__link--small do-nothing">Trending</li>
             </ul>
         
 
@@ -258,6 +261,7 @@
 
 
 
+        
           <div id="mlb-nav" class="mlb-nav hidden hidden-lg ">
             <ul class="mlb-nav__ul">
                 <li class="mlb-nav__title ">
@@ -424,8 +428,9 @@
           </div>
 
 
-
+        </div>
     </div>
+    
 
 </header>
 
@@ -458,8 +463,8 @@
     </div>
 
 
-    <div class="b-spot__wrap">
-        <div class="b-spot">
+    <div class="b-spot">
+        <div class="b-spot__wrap">
             <div class="b-spot__image-wrap">
                 
                 <div class="b-spot__image">
@@ -476,13 +481,13 @@
             <div class="ws-caps">
                 <h1 class="ws-caps__title">WORLD SERIES CAPS</h1>
                 <div class="ws-caps__wrap">
-                    <div class="ws-caps__item-1">
-                        <div class="ws-caps__image-1"></div>
+                    <div class="ws-caps__item ">
+                        <div class="ws-caps__image ws-caps__image--1"></div>
                         <h2 class="ws-caps__content-title">CHICAGO CUBS</h2>
                         <p class="ws-caps__content">2016 MLB World<br>Series Champ<br>59FIFTY AC Patch<br>Cap</p>
                     </div>
-                    <div class="ws-caps__item-2">
-                        <div class="ws-caps__image-2"></div>
+                    <div class="ws-caps__item">
+                        <div class="ws-caps__image ws-caps__image--2"></div>
                         <h2 class="ws-caps__content-title">CHICAGO CUBS</h2>
                         <p class="ws-caps__content">MLB 2016 World<br>Series Collection<br>59FIFTY Cap</p>
                     </div>
@@ -551,14 +556,14 @@
     </div>
 </div>
 <div class="to-top">
-    <a href="#"><div class="to-top__link">Back To Top</div></a>
+    <div class="to-top__link"><a>Back To Top</a></div>
 </div>
 
 
 
     <footer class="footer">
         <div class="footer__top-wrap">
-            <a href="#"><div class="footer__ne-icon"></div></a>
+            <a href="index.html"><div class="footer__ne-icon"></div></a>
             <div class="footer__logo-wrap">
                 <div class="footer__logo footer__logo--insta"></div>
                 <div class="footer__logo footer__logo--twitter"></div>
@@ -570,34 +575,34 @@
 
         <div class="footer__mid-wrap">
                 <ul class="footer__column-wrap--left footer__column-wrap about-new-era">
-                    <li class="about-new-era__title"><a href="#">ABOUT NEW ERA</a></li>
-                    <li class="about-new-era__link"><a href="#">History</a></li>
-                    <li class="about-new-era__link"><a href="#">Careers</a></li>
-                    <li class="about-new-era__link"><a href="#">Corporate Responsibility</a></li>
-                    <li class="about-new-era__link"><a href="#">Business with New Era</a></li>
-                    <li class="about-new-era__link about-new-era__link--sm"><a href="#">Press Room</a></li>
-                    <li class="about-new-era__link about-new-era__link--sm"><a href="#">Fan Content Submission</a></li>
-                    <li class="about-new-era__link about-new-era__link--sm"><a href="#">New Era Stores</a></li>
+                    <li class="about-new-era__title"><a>ABOUT NEW ERA</a></li>
+                    <li class="about-new-era__link do-nothing"><a href="#">History</a></li>
+                    <li class="about-new-era__link do-nothing"><a href="#">Careers</a></li>
+                    <li class="about-new-era__link do-nothing"><a href="#">Corporate Responsibility</a></li>
+                    <li class="about-new-era__link do-nothing"><a href="#">Business with New Era</a></li>
+                    <li class="about-new-era__link do-nothing about-new-era__link--sm do-nothing"><a href="#">Press Room</a></li>
+                    <li class="about-new-era__link do-nothing about-new-era__link--sm do-nothing"><a href="#">Fan Content Submission</a></li>
+                    <li class="about-new-era__link do-nothing about-new-era__link--sm do-nothing"><a href="#">New Era Stores</a></li>
                 </ul>
 
                 <ul class="footer__column-wrap footer__column-wrap--center about-new-era__cont">
-                    <li class="about-new-era__link about-new-era__link--lg"><a href="#">Press Room</a></li>
-                    <li class="about-new-era__link about-new-era__link--lg"><a href="#">Fan Content Submission</a></li>
-                    <li class="about-new-era__link about-new-era__link--lg"><a href="#">New Era Stores</a></li>
+                    <li class="about-new-era__link about-new-era__link--lg do-nothing"><a href="#">Press Room</a></li>
+                    <li class="about-new-era__link about-new-era__link--lg do-nothing"><a href="#">Fan Content Submission</a></li>
+                    <li class="about-new-era__link about-new-era__link--lg do-nothing"><a href="#">New Era Stores</a></li>
                 </ul>
 
                 <ul class="footer__column-wrap--right footer__column-wrap support">
-                    <li class="support__title"><a href="#">SUPPORT</a></li>
-                    <li class="support__link"><a href="#">Contact Us</a></li>
-                    <li class="support__link"><a href="#">Customer Support</a></li>
+                    <li class="support__title"><a>SUPPORT</a></li>
+                    <li class="support__link do-nothing"><a href="#">Contact Us</a></li>
+                    <li class="support__link do-nothing"><a href="#">Customer Support</a></li>
                 </ul>
         </div>
         <div class="footer-bottom">
             <div class="footer-bottom__copyright">&copy;Jim Felli <a class="current-year"></a> All Rights Reserved</div>
             <ul class="footer-bottom__link-wrap">
-                <li class="footer-bottom__link"><a href="#">Sitemap</a></li>
-                <li class="footer-bottom__link"><a href="#">Privacy Policy</a></li>
-                <li class="footer-bottom__link"><a href="#">Terms and Conditions</a></li>
+                <li class="footer-bottom__link do-nothing"><a href="#">Sitemap</a></li>
+                <li class="footer-bottom__link do-nothing"><a href="#">Privacy Policy</a></li>
+                <li class="footer-bottom__link do-nothing"><a href="#">Terms and Conditions</a></li>
             </ul>
 
         </div>

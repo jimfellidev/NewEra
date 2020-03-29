@@ -24,7 +24,6 @@ body {
 .nav__top-content {
   text-transform: uppercase;
   width: 216px;
-  height: 32px;
   font-size: 14px;
   color: #666666;
   letter-spacing: 1px;
@@ -42,7 +41,6 @@ body {
 }
 
 .nav__bottom {
-  height: 61px;
   background-color: white;
   border-bottom: 1px solid #979797;
 }
@@ -52,6 +50,7 @@ body {
   display: block;
   height: 100%;
   text-align: center;
+  margin: auto auto;
 }
 
 .nav__item:hover {
@@ -61,8 +60,7 @@ body {
 
 @media (min-width: 768px) {
   .nav__item {
-    padding-top: 21px;
-    margin: 0 auto;
+    margin: auto auto;
     font-family: 'Open Sans';
     font-size: 16px;
     color: #000000;
@@ -76,13 +74,10 @@ body {
 
 .nav__item--logo {
   width: 50%;
-  /* margin-left: 10px; */
-  padding-top: 10px;
 }
 
 @media (min-width: 768px) {
   .nav__item--logo {
-    padding-top: 9px;
     width: 9%;
     text-align: left;
     margin-left: 0;
@@ -95,21 +90,17 @@ body {
 
 .nav__item--search {
   width: 10%;
-  /* padding-left: 5%; */
-  padding-top: 16px;
 }
 
 @media (min-width: 768px) {
   .nav__item--search {
     width: 3%;
     position: relative;
-    padding-top: 18px;
   }
 }
 
 .nav__item--shop {
   width: 10%;
-  padding-top: 16px;
 }
 
 @media (min-width: 768px) {
@@ -118,11 +109,11 @@ body {
     position: relative;
     margin-left: 6px;
     margin-right: 0;
-    padding-top: 18px;
   }
 }
 
 .nav__item-wrap {
+  padding: .5px 0;
   list-style-type: none;
   width: 100%;
   height: 100%;
@@ -150,6 +141,7 @@ body {
 
 @media (min-width: 768px) {
   .nav__item-wrap-lg {
+    padding: 8px 0;
     margin: 0 auto;
     list-style-type: none;
     width: 91%;
@@ -440,7 +432,7 @@ body {
   height: 520px;
   z-index: 8;
   top: 1;
-  top: 120px;
+  top: 113px;
   position: absolute;
   background-color: white;
   overflow-y: scroll;
@@ -553,7 +545,6 @@ body {
   display: inline-block;
   width: 100%;
   padding-left: 0;
-  /* MLB Copy: */
 }
 
 @media (min-width: 768px) {
@@ -791,6 +782,18 @@ body {
 }
 
 .b-spot {
+  margin-top: -63px;
+}
+
+@media (min-width: 768px) {
+  .b-spot {
+    margin-top: 0;
+    padding-top: 19px;
+    background-color: #EEEEEE;
+  }
+}
+
+.b-spot__wrap {
   position: relative;
   min-width: 320px;
   width: 100%;
@@ -800,7 +803,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .b-spot {
+  .b-spot__wrap {
     z-index: 3;
     margin-top: 63px;
     display: -webkit-box;
@@ -813,18 +816,6 @@ body {
     width: 91%;
     margin: 0 auto;
     padding-top: 0;
-  }
-}
-
-.b-spot__wrap {
-  margin-top: -63px;
-}
-
-@media (min-width: 768px) {
-  .b-spot__wrap {
-    margin-top: 0;
-    padding-top: 19px;
-    background-color: #EEEEEE;
   }
 }
 
@@ -1017,58 +1008,38 @@ body {
   }
 }
 
-.ws-caps__item-1 {
+.ws-caps__item {
   width: 40%;
   text-align: center;
 }
 
 @media (min-width: 768px) {
-  .ws-caps__item-1 {
+  .ws-caps__item {
     width: auto;
   }
 }
 
-.ws-caps__item-2 {
-  width: 40%;
-  text-align: center;
+.ws-caps__image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 82px;
+  width: 110px;
+  position: relative;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-  .ws-caps__item-2 {
-    width: auto;
+  .ws-caps__image {
+    background-size: auto;
   }
 }
 
-.ws-caps__image-1 {
+.ws-caps__image--1 {
   background-image: url(../images/cubs-hat.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 82px;
-  width: 110px;
-  position: relative;
-  margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-  .ws-caps__image-1 {
-    background-size: auto;
-  }
-}
-
-.ws-caps__image-2 {
+.ws-caps__image--2 {
   background-image: url(../images/cubs-hat2.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 82px;
-  width: 110px;
-  position: relative;
-  margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-  .ws-caps__image-2 {
-    background-size: auto;
-  }
 }
 
 .ws-caps__content {
@@ -1189,11 +1160,6 @@ body {
   background-color: #EEEEEE;
 }
 
-.to-top a {
-  color: #000000;
-  text-decoration: none;
-}
-
 .to-top__link {
   font-size: 14px;
   color: #000000;
@@ -1204,7 +1170,7 @@ body {
   padding-top: 10px;
 }
 
-.to-top__link:before {
+.to-top__link a:before {
   margin-top: 23px;
   margin-left: -18px;
   content: '';
@@ -1215,6 +1181,11 @@ body {
   border-style: none none solid solid;
   -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
+}
+
+.to-top__link a:hover {
+  opacity: .8;
+  cursor: pointer;
 }
 
 .footer {

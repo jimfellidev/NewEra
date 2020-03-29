@@ -1,23 +1,72 @@
+// // close nav on offclick
+// const $menu = $('#sports-nav');
+// const $smallMenu = $('.mlb-nav');
+// const $mainMenu = $('#dropdown');
+// const $test = $('.nav');
+
+// $(document).mouseup(e => {
+//    if (!$test.is(e.target) // if the target of the click isn't the container...
+//    && $menu.has(e.target).length === 0 // ... nor a descendant of the container
+//    && $mainMenu.has(e.target).length === 0 // ... nor a descendant of the container
+//    && $smallMenu.has(e.target).length === 0) // ... nor a descendant of the container
+//    {
+//      $menu.addClass('hidden');
+//      $smallMenu.addClass("hidden");
+//      $mainMenu.addClass('hidden');
+//   } 
+//  });
+
+
 
 
   // HAMBURGER ON CLICK
 $("#hamb").click(function () {
-    if ($("#dropdown").hasClass("hidden")) {
-      $("#dropdown").removeClass("hidden");
+    if ($(".menu").hasClass("hidden")) {
+      $(".menu").removeClass("hidden");
       $("#rect1").toggleClass("showRect"+" "+"nav__rect-top");
       $("#rect2").toggleClass("showRect"+" "+"nav__rect-hide");
       $("#rect3").toggleClass("showRect"+" "+"nav__rect-bottom");
+      console.log('turn to x')
       
       
 
     } else {
-      $(".dropdown").addClass("hidden");
+      $(".menu").addClass("hidden");
       $("#rect1").toggleClass("showRect"+" "+"nav__rect-top");
       $("#rect2").toggleClass("showRect"+" "+"nav__rect-hide");
       $("#rect3").toggleClass("showRect"+" "+"nav__rect-bottom");
+      console.log('turn off x')
     }
   });
 
+  // Close dropbox on nav-offclick // change hamburger as well
+
+$("body").click(function () {
+  target = $(".nav")[0];
+  flag = event.path.some(function (el, i, arr) {
+    return (el == target)
+  });
+  if (!flag) {
+    $("#rect1").removeClass("showRect"+" "+"nav__rect-top");
+    $("#rect2").removeClass("showRect"+" "+"nav__rect-hide");
+    $("#rect3").removeClass("showRect"+" "+"nav__rect-bottom");
+    $(".menu").addClass("hidden");
+  } else if (($(".menu").hasClass("hidden") && ($("#sports-nav").hasClass("hidden")))) {
+    $("#rect1").removeClass("showRect"+" "+"nav__rect-top");
+    $("#rect2").removeClass("showRect"+" "+"nav__rect-hide");
+    $("#rect3").removeClass("showRect"+" "+"nav__rect-bottom");
+  } else if (!($(".menu").hasClass("hidden") && !($("#sports-nav").hasClass("hidden")))) {
+    $("#rect1").addClass("showRect"+" "+"nav__rect-top");
+    $("#rect2").addClass("showRect"+" "+"nav__rect-hide");
+    $("#rect3").addClass("showRect"+" "+"nav__rect-bottom");
+  }
+});
+
+
+
+$(".nav__item--sports").click(function () {
+  $(".menu").removeClass("hidden");
+});
 
 // OPEN SPORTS NAV
 $(".dropdown__link--sports").click(function () {
@@ -55,10 +104,11 @@ $(".sports-nav__link--mlb").click(function () {
 });
 
 // close mlb link if click other sport
-$(".sports-nav__link--nolink").click(function () {
-    $("#mlb-nav").addClass("hidden"); 
-    $(".mlb-nav__ul").addClass("hidden");
-});
+
+// $(".sports-nav__link--nolink").click(function () {
+//     $("#mlb-nav").addClass("hidden"); 
+//     $(".mlb-nav__ul").addClass("hidden");
+// });
 
 // close mlb on hamb click
 $("#hamb").click(function () {
@@ -76,19 +126,9 @@ $(".mlb-nav__arrow-back-wrap").click(function () {
 
 
 
-// close nav on offclick
-const $menu = $('#sports-nav');
 
-$(document).mouseup(e => {
-   if (!$menu.is(e.target) // if the target of the click isn't the container...
-   && $menu.has(e.target).length === 0) // ... nor a descendant of the container
-   {
-     $menu.addClass('hidden');
-     $(".mlb-nav__ul").addClass("hidden");
-  }
- });
 
-  
+
 
 
 
@@ -201,27 +241,45 @@ $(".filter__close").click(function () {
 
 
 
-var $gallery = $(".type");
+const $gallery = $(".type");
 $inputs = $gallery.find("input");
 $(function() {
   // $inputs.attr("checked", "checked");
   $inputs.on("change", function() {
     $inputs.each(function(i, cb) {
-      if (!cb.checked) $(".hats__wrap").find("." + this.value).css("display", "none");
+      if (!cb.checked) $(".hats__wrap").find("." + this.value).addClass('hidden');
     });
     $inputs.each(function(i, cb) {
-      if (cb.checked) $(".hats__wrap").find("." + this.value).css("display", "inline");
+      if (cb.checked) $(".hats__wrap").find("." + this.value).removeClass('hidden');
     });
+
+    let checkboxChecked = $('input[type=checkbox]:checked').length;
+    if (!checkboxChecked){ 
+      $(".all").removeClass('hidden');
+    };
+
   });
+
 });
 
 
 $(".show-all-btn").click(function () {
   $('input[type=checkbox]').prop('checked',false);
-  $(".all").css("display", "inline");
+  $(".all").removeClass('hidden');
 });
 
 
+// $(document).ready(function(){
+//   $('input[type="checkbox"]').click(function(){
+//       if($(this).prop("checked") == true){
+//           console.log("Checkbox is checked.");
+//       }
+//       else if($(this).prop("checked") == false){
+//         console.log("Checkbox is unchecked.");
+//         $(".all").removeClass('hidden');
+//       }
+//   });
+// });
 
 
 // to top arrow is showing through searchbox when 
@@ -437,6 +495,24 @@ $('.hat__image-link').click(function() {
 // opacity on size LI 
 
 $('.selector-lg__size').click(function() {
-  $(this).addClass('opacity').siblings().removeClass('opacity');
+  $(this).addClass('red').siblings().removeClass('red');
 });
 
+
+// LISTENER TO MAKE NON-FUNCTIONAL LINKS DO NOTHING ON CLICK
+$(".do-nothing").click(function (e) {
+  e.preventDefault();
+});
+
+
+// Scroll to top button
+$('.to-top__link a').click(function() {
+  const scrollToTop = () => {
+    const c = document.documentElement.scrollTop || document.body.scrollTop;
+    if (c > 0) {
+      window.requestAnimationFrame(scrollToTop);
+      window.scrollTo(0, c - c / 10);
+    }
+  };
+  scrollToTop();
+});
