@@ -947,6 +947,8 @@ body {
         margin: 0 auto;
     } 
     &__title {
+        width: 90%;
+        margin: 16px auto;
         font-family: 'open sans';
         font-size: 24px;
         color: #000000;
@@ -969,12 +971,6 @@ body {
         margin: 0 auto;
         &--1 {
             background-image: url(../images/slider-hat1.png);
-            // background-repeat: no-repeat;
-            // margin: auto 0;
-            // height: 65%;
-            // width: 172px;
-            // background-size: contain;
-            // margin: 0 auto;
 
         }
         &--2 {
@@ -999,7 +995,8 @@ body {
             height: 172px !important;
             // width: 236px;
             margin: 0 auto;
-            padding-left: 2px;
+            // padding-left: 2px;
+            // width: 4%;
             &--2 {
                 padding-left: 6px;
             }
@@ -1031,6 +1028,11 @@ body {
             line-height: 18px;
         }
     }
+}
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+  width: 90%;
+  margin: 0 auto !important;
 }
 
 
@@ -1240,13 +1242,24 @@ body {
         }
     }
     &__cont {
-        display: none;
-        @media (min-width: $breakpoint-tablet) {
-            display: flex;
-            padding-top: 41px;
-            // width: 30%;
-            width: auto;
-        } 
+        // display: none;
+        // @media (min-width: $breakpoint-tablet) {
+        //     display: flex;
+        //     padding-top: 41px;
+        //     // width: 30%;
+        //     width: auto;
+        // } 
+    }
+    &__ul {
+        &--center {
+            display: none;
+            @media (min-width: $breakpoint-tablet) {
+                display: flex;
+                padding-top: 41px;
+                // width: 30%;
+                width: auto;
+            } 
+        }
     }
 }
 

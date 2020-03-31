@@ -162,35 +162,27 @@ $(".mlb-nav__arrow-back-wrap").click(function () {
 
 
 
-
-
  $('.slider').slick({
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 2,
-    arrows: true,
-    // focusOnSelect: true,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
-    arrows: true,
-    centerMode: true,
-        // centerPadding: '60px',
+    // arrows: true,
+    // centerMode: true,
     responsive: [
     {
         breakpoint: 1200,
         settings: {
-            arrows: true,
-            centerMode: true,
-            // centerPadding: '40px',
+            // arrows: true,
+            // centerMode: true,
             slidesToShow: 3,
         }
     },
     {
     breakpoint: 735,
     settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '40px',
+        // arrows: true,
+        // centerMode: true,
+        // centerPadding: '40px',
         slidesToShow: 1
     }
     },

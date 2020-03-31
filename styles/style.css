@@ -1074,6 +1074,8 @@ body {
 }
 
 .trending__title {
+  width: 90%;
+  margin: 16px auto;
   font-family: 'open sans';
   font-size: 24px;
   color: #000000;
@@ -1123,7 +1125,6 @@ body {
 .slider__image-wrap {
   height: 172px !important;
   margin: 0 auto;
-  padding-left: 2px;
 }
 
 .slider__image-wrap--2 {
@@ -1152,6 +1153,11 @@ body {
   letter-spacing: 0.42px;
   text-align: center;
   line-height: 18px;
+}
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+  width: 90%;
+  margin: 0 auto !important;
 }
 
 .to-top {
@@ -1387,12 +1393,12 @@ body {
   }
 }
 
-.about-new-era__cont {
+.about-new-era__ul--center {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .about-new-era__cont {
+  .about-new-era__ul--center {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
