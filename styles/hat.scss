@@ -13,20 +13,6 @@ body {
     background-color: white;
     margin-top: 20px;
     
-    // @media (min-width: $breakpoint-tablet) {
-    //     display: flex;
-    //     flex-direction: row;
-    // }
-    // &:nth-child(1) { 
-    //     @media (min-width: $breakpoint-tablet) {
-    //         order: 2; 
-    //     }
-    // }   
-    // &:nth-child(2) { 
-    //     @media (min-width: $breakpoint-tablet) {
-    //         order: 1; 
-    //     }
-    // }         
 
     &__container {
         width: 90%;
@@ -61,7 +47,7 @@ body {
         letter-spacing: 0.44px;
         line-height: 20px;
         @media (min-width: $breakpoint-tablet) {
-            /* PHILADELPHIA PHILLIE: */
+        
             font-size: 18px;
             letter-spacing: 0.5px;
         }      
@@ -72,19 +58,19 @@ body {
         color: #000000;
         letter-spacing: 0.5px;
         text-align: left;
-        // line-height: 28px;
+        
         @media (min-width: $breakpoint-tablet) {
             font-size: 36px;
-            // line-height: 36px;
+        
         }      
     }
     &__price {
-        /* $34.99: */
+        
         font-family: 'open sans';
         font-size: 28px;
         color: #000000;
         letter-spacing: 0.5px;
-        // line-height: 26px;
+        
         @media (min-width: $breakpoint-tablet) {
             font-size: 36px;
             letter-spacing: 0.94px;
@@ -111,10 +97,10 @@ body {
         background-repeat: no-repeat;
         background-size: contain;
         height: 230px;
-        // width: 250px;
+        
         width: 100%;
         background-position: center;
-        // margin: 0 auto;
+        
         margin-top: 27px;
         @media (min-width: $breakpoint-tablet) {
             margin: 0 auto;
@@ -142,7 +128,7 @@ body {
             padding-top: 50px;
             width: 100%;
             margin-top: auto;
-            // margin: 0;
+            
         }      
     }
     &__image-link {
@@ -155,9 +141,7 @@ body {
         @media (min-width: $breakpoint-tablet) {
             height: 61px;
         }      
-        // &:active {
-        //     opacity: .5;
-        // }
+
         &:hover {
             cursor: pointer;
         }
@@ -251,7 +235,6 @@ body {
         letter-spacing: 0.94px;
         padding-top: 32px;
         padding-left: 5%;
-        // text-align: center;
         &:hover {
             cursor: pointer;
         }
@@ -297,7 +280,7 @@ body {
         line-height: 20px;
     }
     &__image-wrap {
-        // padding-left: 0;
+        
         &--2 {
             padding-left: auto;
         }

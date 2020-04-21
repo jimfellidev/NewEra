@@ -133,7 +133,7 @@ body {
 .filter__close {
   position: absolute;
   right: 6px;
-  top: -9px;
+  top: 9px;
   width: 16px;
   height: 16px;
   color: #979797;
@@ -159,11 +159,10 @@ body {
 }
 
 .filter__checkbox-wrap {
-  margin-top: -22px;
+  margin-top: 9px;
+  margin-bottom: 2px;
   padding-top: 6px;
   padding-left: 16px;
-  -webkit-box-shadow: 0px 0px 5px -2px;
-          box-shadow: 0px 0px 5px -2px;
   padding-bottom: 16px;
 }
 
@@ -404,6 +403,9 @@ h1 {
   width: 93%;
   background-color: white;
   min-width: 290px;
+  margin-top: -22px;
+  -webkit-box-shadow: 0px 0px 5px -2px;
+          box-shadow: 0px 0px 5px -2px;
 }
 
 @media (min-width: 768px) {
@@ -601,7 +603,6 @@ h1 {
   margin-left: 2px;
 }
 
-/* Add padding BETWEEN each column (if you want) */
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;

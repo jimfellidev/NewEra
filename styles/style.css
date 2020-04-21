@@ -583,7 +583,7 @@ body {
 .mlb-nav__arrow {
   float: right;
   content: "";
-  margin-top: 17px;
+  margin-top: 21px;
   margin-right: 19px;
   border: solid black;
   border-width: 0 3px 3px 0;
@@ -700,7 +700,7 @@ body {
   letter-spacing: 0.89px;
   background: rgba(0, 0, 0, 0.8);
   border: 1px solid #FFFFFF;
-  height: 36px;
+  height: 46px;
   width: 200px;
 }
 
@@ -771,7 +771,7 @@ body {
   letter-spacing: 0.89px;
   background: rgba(0, 0, 0, 0.8);
   border: 1px solid #FFFFFF;
-  height: 36px;
+  height: 46px;
   width: 200px;
 }
 
@@ -1379,7 +1379,6 @@ body {
 }
 
 .about-new-era__link {
-  /* History Careers Corp: */
   font-size: 12px;
   color: #FFFFFF;
   letter-spacing: 0.43px;

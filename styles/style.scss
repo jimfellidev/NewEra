@@ -7,8 +7,7 @@ html {
     min-width: 320px;
 }
 
-// font-family: 'Open Sans', ;
-// font-family: 'Raleway', ;
+
 
 body {
     margin: 0;
@@ -41,7 +40,7 @@ body {
         }
     }
     &__bottom {
-        // height: 61px;
+        
         background-color: white;
         border-bottom: 1px solid #979797;
     }
@@ -497,7 +496,7 @@ body {
     &__arrow {
         float: right;
         content: "";
-        margin-top: 17px;
+        margin-top: 21px;
         margin-right: 19px;
         border: solid rgba(0,0,0,50);
         border-width: 0 3px 3px 0;
@@ -536,7 +535,6 @@ body {
         position: absolute;
         margin-top: 12px;
         @media (min-width: $breakpoint-tablet) {
-            // display: flex;
             margin-top: 6px;
         }
     }
@@ -548,7 +546,6 @@ body {
     position: relative;
     margin-top: 83px;
     @media (min-width: $breakpoint-tablet) {
-        // display: flex;
         height: 600px;
         margin-top: 111px;
     }
@@ -604,7 +601,7 @@ body {
             letter-spacing: 0.89px;
             background: rgba(0,0,0,0.80);
             border: 1px solid #FFFFFF;
-            height: 36px;
+            height: 46px;
             width: 200px;
             &-wrap {
                 width: 100%;
@@ -633,7 +630,7 @@ body {
         padding: 113px 0;
 
         @media (min-width: $breakpoint-tablet) {
-            // clip-path: polygon(0% 0%, 0% -84%, 180% 232%, 0 100%);
+            
             
             height: 600px;
             position: absolute;
@@ -645,7 +642,7 @@ body {
             margin-top: 0;
         }
 
-        // clip-path: polygon(0% 0%, 0% -20%, 200% 210%, 0% 100%);
+        
 
         &-content {
             position: relative;
@@ -676,7 +673,7 @@ body {
             letter-spacing: 0.89px;
             background: rgba(0,0,0,0.80);
             border: 1px solid #FFFFFF;
-            height: 36px;
+            height: 46px;
             width: 200px;
             &-wrap {
                 width: 100%;
@@ -688,31 +685,6 @@ body {
     }
 }
 
-
-// .b-spot {
-//     position: relative;
-//     min-width: 320px;
-//     width: 100%;
-//     background-color: #EEEEEE;
-//     padding-top: 19px;
-//     padding-bottom: 32px;
-//     @media (min-width: $breakpoint-tablet) {
-//         z-index: 3;
-//         margin-top: 63px;
-//         display: flex;
-//         flex-direction: row;
-//         width: 91%;
-//         margin: 0 auto;
-//         padding-top: 0;
-//     }
-//     &__wrap {    
-//         margin-top: -63px;
-//         @media (min-width: $breakpoint-tablet) {
-//             margin-top: 0;
-//             padding-top: 19px;
-//             background-color: #EEEEEE;
-//         }
-//     }
 
 
 
@@ -746,7 +718,7 @@ body {
 
 
 
-        // margin-top: -16px;
+        
     &__image-wrap {
         width: 87.5%;
         margin: 0 auto;
@@ -757,7 +729,7 @@ body {
     }
     &__image {
         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/test.jpg);
-        // height: 280px;
+        
         background-position: initial;
         background-repeat: no-repeat;
         background-size: cover;
@@ -784,7 +756,7 @@ body {
         padding-top: 30px;
         font-family: 'Open Sans';
         @media (min-width: $breakpoint-tablet) {
-            // font-family: .SFNSDisplay-Regular;
+            
             font-size: 36px;
             color: #FFFFFF;
             letter-spacing: 0.5px;
@@ -856,7 +828,7 @@ body {
         padding-left: 16px;
         padding-right: 16px;
         margin: 0 auto;
-        // float: right;
+        
     }
     &__title {
         // font-family: .SFNSDisplay-Regular;
@@ -943,7 +915,7 @@ body {
 .trending {
     padding-bottom: 26px;
     @media (min-width: $breakpoint-tablet) {
-        // width: 91%;
+        
         margin: 0 auto;
     } 
     &__title {
@@ -964,7 +936,7 @@ body {
     text-align: center;
     &__image {
         background-repeat: no-repeat;
-        // margin: auto 0;
+        
         height: 60%;
         width: 156px;
         background-size: contain;
@@ -981,15 +953,15 @@ body {
         }
         &--4 {
             background-image: url(../images/slider-hat4.png);
-            // margin-left: 58px;
+            
         }
         &--5 {
             background-image: url(../images/slider-hat5.png);
-            // margin-left: 58px;
+            
         }
         &--6 {
             background-image: url(../images/slider-hat6.png);
-            // margin-left: 58px;
+            
         }
         &-wrap {
             height: 172px !important;
@@ -1037,14 +1009,6 @@ body {
     width: 100%;
     height: 70px;
     background-color: #EEEEEE;
-    // &:hover {
-    //     opacity: .8;
-    //     cursor: pointer;
-    // }
-    // & a {
-    //     color: #000000;
-    //     text-decoration: none;
-    // }
     &__link {
         // font-family: .AppleSystemUIFont;
         font-size: 14px;
@@ -1054,22 +1018,7 @@ body {
         text-align: center;
         font-family: 'open sans';
         padding-top: 10px;
-        // &:before {
-        //     margin-top: 23px;
-        //     margin-left: -18px;
-        //     content: '';
-        //     position: absolute;
-        //     height: 7px;
-        //     width: 7px;
-        //     border: 1.5px #000000;
-        //     border-style: none none solid solid;
-        //     -webkit-transform: rotate(135deg);
-        //     transform: rotate(135deg);
-        // }
-        // &:hover:before {
-        //     opacity: .8;
-        //     cursor: pointer;   
-        // }
+
         & a {
             &:before {
                 margin-top: 23px;
@@ -1093,7 +1042,7 @@ body {
 
 
 .footer {
-    // height: 524px;
+    
     width: 100%;
     background-color: black;
     padding-bottom: 10px;
@@ -1169,10 +1118,10 @@ body {
         margin-bottom: 17px;
         padding-top: 5px;
         border-top: 1px solid #333333;
-        // justify-content: space-between;
+        
         @media (min-width: $breakpoint-tablet) {
             justify-content: space-around; 
-            // margin-top: 20px;
+            
             padding-top: 10px
             
         } 
@@ -1225,7 +1174,7 @@ body {
         line-height: 40px;
     }
     &__link {
-        /* History Careers Corp: */
+        
         // font-family: .AppleSystemUIFont;
         font-size: 12px;
         color: #FFFFFF;
@@ -1239,13 +1188,7 @@ body {
         }
     }
     &__cont {
-        // display: none;
-        // @media (min-width: $breakpoint-tablet) {
-        //     display: flex;
-        //     padding-top: 41px;
-        //     // width: 30%;
-        //     width: auto;
-        // } 
+
     }
     &__ul {
         &--center {
@@ -1253,7 +1196,7 @@ body {
             @media (min-width: $breakpoint-tablet) {
                 display: flex;
                 padding-top: 41px;
-                // width: 30%;
+                
                 width: auto;
             } 
         }
@@ -1290,7 +1233,7 @@ body {
     flex-direction: column;
     padding-top: 17px;
     border-top: 1px solid #333333;
-    // padding-bottom: 10px;
+    
 
     @media (min-width: $breakpoint-tablet) {
         flex-direction: row;
@@ -1314,7 +1257,7 @@ body {
         display: flex;
         flex-direction: row;
         text-align: center;
-        // justify-content: space-evenly;
+        
         
         justify-content: center;
         @media (min-width: $breakpoint-tablet) {
